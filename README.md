@@ -11,3 +11,5 @@ At the time of creating this app, I could not find a convenient Android app that
 3. Reorganize loading images
 
 4. Add tips on what would be effective during the expedition
+
+5. Restructure curio interaction outcomes in order to increase clarity
