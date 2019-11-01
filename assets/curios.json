@@ -1,0 +1,990 @@
+[
+    {
+        "name": "Ancient Artifact",
+        "location": [
+            "ruins",
+            "weald",
+            "warrens",
+            "cove"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "Gold or gems x2.5"
+                ]
+            },
+            {
+                "item": "key",
+                "result": "Special trinket or Puzzling Trapezohedron x3"
+            }
+        ]
+    },
+    {
+        "name": "Crate",
+        "location": [
+            "ruins",
+            "warrens",
+            "cove",
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "75% Heirlooms",
+                    "25% Nothing"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Discarded Pack",
+        "location": [
+            "ruins",
+            "warrens",
+            "cove",
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "60% Gold, gems or supplies x1.5",
+                    "20% Scouting",
+                    "20% Nothing"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Eldritch Altar",
+        "location": [
+            "ruins",
+            "weald",
+            "cove",
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Stress +50",
+                    "33% Gain random positive quirk",
+                    "16% Gain random negative quirk",
+                    "16% Nothing"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "Purge a negative quirk"
+            }
+        ]
+    },
+    {
+        "name": "Heirloom Chest",
+        "location": [
+            "ruins",
+            "weald",
+            "cove",
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "75% Gold or gems x2",
+                    "12.5% Bleed",
+                    "12.5% Blight"
+                ]
+            },
+            {
+                "item": "key",
+                "result": "Heirlooms x3"
+            },
+            {
+                "item": "antivenom",
+                "result": "Heirlooms x3"
+            }
+        ]
+    },
+    {
+        "name": "Sack",
+        "location": [
+            "ruins",
+            "cove",
+            "weald",
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "75% Gold or gems",
+                    "25% Nothing"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Sconce",
+        "location": [
+            "ruins",
+            "cove",
+            "weald",
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "Torch"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Shambler's Altar",
+        "location": [
+            "ruins",
+            "cove",
+            "weald",
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "Nothing"
+                ]
+            },
+            {
+                "item": "torch",
+                "result": "Summon Shambler"
+            }
+        ]
+    },
+    {
+        "name": "Unlocked Strongbox",
+        "location": [
+            "ruins",
+            "cove",
+            "weald",
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "75% Any loot x2",
+                    "25% Blight"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Alchemy Table",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Blight",
+                    "25% Gold or gems",
+                    "25% Nothing"
+                ]
+            },
+            {
+                "item": "torch",
+                "result": "Set light to 100"
+            },
+            {
+                "item": "herb",
+                "result": "Gold or gems x2"
+            }
+        ]
+    },
+    {
+        "name": "Altar of Light",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "Buff 20 DMG until camp"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "Buff 30 DMG until camp"
+            }
+        ]
+    },
+    {
+        "name": "Bookshelf",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "25% Scouting",
+                    "25% Stress +50",
+                    "16% Gain random positive quirk",
+                    "8% Gain a negative quirk or disease",
+                    "25% Nothing"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Confession Booth",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Stress +20",
+                    "25% Gold or trinket",
+                    "25% Purge a negative quirk"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "Stress heal 30"
+            }
+        ]
+    },
+    {
+        "name": "Decorative Urn",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "44% Gold or trinket x2",
+                    "22% Blight",
+                    "7% Creeping Cough disease",
+                    "3% random disease",
+                    "22% Nothing"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "Gold or trinket x2"
+            },
+            {
+                "item": "shovel",
+                "result": "Gain Guilty Conscience negative quirk"
+            }
+        ]
+    },
+    {
+        "name": "Holy Fountain",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Heal 10 stress, cure status effect, heal 5 HP",
+                    "50% Gold or gems"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "Heal 20 stress, cure status effect, heal 12 HP"
+            }
+        ]
+    },
+    {
+        "name": "Iron Maiden",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "40% Any loot x2",
+                    "20% Gain Claustrophobia negative quirk",
+                    "13% Tetanus disease",
+                    "6% random disease",
+                    "20% Nothing"
+                ]
+            },
+            {
+                "item": "herb",
+                "result": "Any loot"
+            }
+        ]
+    },
+    {
+        "name": "Locked Display Cabinet",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Bleed x2",
+                    "50% Blight"
+                ]
+            },
+            {
+                "item": "key",
+                "result": "Gold, gems or heirlooms x2.5"
+            },
+            {
+                "item": "shovel",
+                "result": "Gold, gems or heirlooms x2"
+            }
+        ]
+    },
+    {
+        "name": "Locked Sarcophagus",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Bleed x2",
+                    "50% Blight"
+                ]
+            },
+            {
+                "item": "key",
+                "result": "Gold, gems or heirlooms x1.5"
+            },
+            {
+                "item": "shovel",
+                "result": "Gold, gems or heirlooms"
+            }
+        ]
+    },
+    {
+        "name": "Sarcophagus",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "60% Gold or heirloooms x2",
+                    "20% Gain Thanatophobia negative quirk",
+                    "20% Nothing"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Stack of books",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "26% Stress +25 x2",
+                    "26% Gain random positive quirk",
+                    "13% Gain random negative quirk",
+                    "13% Decrease light by 25",
+                    "20% Nothing"
+                ]
+            },
+            {
+                "item": "torch",
+                "result": "Stress +100"
+            }
+        ]
+    },
+    {
+        "name": "Suit of Armor",
+        "location": [
+            "ruins"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "75% Buff 10 DODGE, 10% PROT until camp",
+                    "12.5% Gain Ruins Adventurer positive quirk",
+                    "12.5% Gain Ruins Tactician positive quirk"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Bone Altar",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "Buff +15% DMG, +10 ACC, +5% CRT, Cure Status Effects x2"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Dinner Cart",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "25% Gold, food or trinket x1",
+                    "25% Blight"
+                ]
+            },
+            {
+                "item": "25%random disease",
+                "result": "25%Nothing"
+            },
+            {
+                "item": "herb",
+                "result": "Gold, food or trinket x2"
+            }
+        ]
+    },
+    {
+        "name": "Makeshift dining table",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "25% Gold, food or trinket x1",
+                    "25% Blight"
+                ]
+            },
+            {
+                "item": "25%random disease",
+                "result": "25%Nothing"
+            },
+            {
+                "item": "herb",
+                "result": "Gold, food or trinket x2"
+            }
+        ]
+    },
+    {
+        "name": "Moonshine Barrel",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "33.3% Gold, food or supplies x1",
+                    "33.3% Blight",
+                    "11.1% Alcoholism disease",
+                    "22.2% Nothing"
+                ]
+            },
+            {
+                "item": "herb",
+                "result": "Buff 30% DMG until camp"
+            }
+        ]
+    },
+    {
+        "name": "Occult Scrawlings",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "33.3% Gain random positive quirk x1",
+                    "25% Stress +25",
+                    "17.6% Gain random negative quirk",
+                    "25% Nothing"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "Debuff 20 DODGE"
+            }
+        ]
+    },
+    {
+        "name": "Pile of Bones",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "25% Any loot x2",
+                    "25% random disease",
+                    "25% Gain Bloodthirsty negative quirk",
+                    "25% Nothing"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "Any loot x2"
+            }
+        ]
+    },
+    {
+        "name": "Pile of Scrolls",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "33.3% Scouting",
+                    "16.7% Stress +15",
+                    "11.1% Gain random positive quirk",
+                    "5.6% Gain random negative quirk",
+                    "33.3% Nothing"
+                ]
+            },
+            {
+                "item": "torch",
+                "result": "Purge a negative quirk"
+            }
+        ]
+    },
+    {
+        "name": "Rack of Blades",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "40% Gold, gems or food",
+                    "40% Bleed",
+                    "20% Nothing"
+                ]
+            },
+            {
+                "item": "bandage",
+                "result": "Gold, gems or food x1.5"
+            }
+        ]
+    },
+    {
+        "name": "Sacrificial Stone",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Stress +50",
+                    "25% Purge a negative quirk",
+                    "25% Gain Warrens Explorer positive quirk"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Stack of Books",
+        "location": [
+            "warrens"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "26.7% Stress +25",
+                    "26.7% Gain random positive quirk",
+                    "13.3% Gain random negative quirk",
+                    "13.3% Decrease light by 25",
+                    "20% Nothing"
+                ]
+            },
+            {
+                "item": "torch",
+                "result": "Stress +100"
+            }
+        ]
+    },
+    {
+        "name": "Ancient Coffin",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Gold or heirloooms x2",
+                    "16.6% Gain Weald Adventurer positive quirk",
+                    "33.3% Nothing"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Beast Carcass",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "42.9% Food",
+                    "28.6% Rabies disease",
+                    "14.3% Gain Zoophobia negative quirk",
+                    "14.3% Nothing"
+                ]
+            },
+            {
+                "item": "herb",
+                "result": "Food x2"
+            }
+        ]
+    },
+    {
+        "name": "Eerie Spiderweb",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "40% Gold, gems or trinket",
+                    "10% Gain Slow Reflexes negative quirk",
+                    "10% Gain Slowdraw negative quirk",
+                    "40% Nothing"
+                ]
+            },
+            {
+                "item": "bandage",
+                "result": "Gold, gems or trinket x1.5"
+            }
+        ]
+    },
+    {
+        "name": "Left Luggage",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Any loot",
+                    "50% Blight",
+                    "Skeleton Key",
+                    "Any loot x3"
+                ]
+            },
+            {
+                "item": "antivenom",
+                "result": "Any loot x3"
+            }
+        ]
+    },
+    {
+        "name": "Mummified Remains",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "40% Gold or trinket",
+                    "40% Blight",
+                    "20% Nothing"
+                ]
+            },
+            {
+                "item": "bandage",
+                "result": "Gold or trinket x2"
+            }
+        ]
+    },
+    {
+        "name": "Old Tree",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Any loot x2",
+                    "25% Blight",
+                    "25% Nothing"
+                ]
+            },
+            {
+                "item": "antivenom",
+                "result": "Any loot x3"
+            }
+        ]
+    },
+    {
+        "name": "Pristine Fountain",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "Stress heal 20"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "Stress heal 30"
+            }
+        ]
+    },
+    {
+        "name": "Shallow Grave",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Blight",
+                    "50% random disease"
+                ]
+            },
+            {
+                "item": "shovel",
+                "result": "Gems or herlooms x3"
+            }
+        ]
+    },
+    {
+        "name": "Traveler's Tent",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "37.5% Gold, supplies or heirlooms x2",
+                    "37.5% Scouting",
+                    "12.5% Stress +25",
+                    "12.5% Nothing"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Troubling Effigy",
+        "location": [
+            "weald"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "18.7% Gain random positive quirk",
+                    "18.7% Gain random negative quirk",
+                    "18.7% Bleed",
+                    "9.4% Blight",
+                    "9.4% Stress +15",
+                    "25% Nothing"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "Gain random positive quirk"
+            }
+        ]
+    },
+    {
+        "name": "Barnacle Crusted Chest",
+        "location": [
+            "cove"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Gold, gems, heirlooms or supplies x2",
+                    "25% Bleed",
+                    "25% Nothing"
+                ]
+            },
+            {
+                "item": "shovel",
+                "result": "Any loot x3"
+            }
+        ]
+    },
+    {
+        "name": "Bas-Relief",
+        "location": [
+            "cove"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "66.7% Gain random positive quirk",
+                    "25% Gain random negative quirk",
+                    "8.3% random disease"
+                ]
+            },
+            {
+                "item": "shovel",
+                "result": "Stress +100"
+            }
+        ]
+    },
+    {
+        "name": "Brackish Tidepool",
+        "location": [
+            "cove"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "75% Buff 33% Bleed, Blight, Disease and Debuff resist until camp",
+                    "25% random disease"
+                ]
+            },
+            {
+                "item": "antivenom",
+                "result": "Heal 5 stress, cure status effect, heal 5 HP"
+            }
+        ]
+    },
+    {
+        "name": "Eerie Coral",
+        "location": [
+            "cove"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Stress heal 10",
+                    "25% Stress +25",
+                    "25% Nothing"
+                ]
+            },
+            {
+                "item": "herb",
+                "result": "Purge a negative quirk"
+            }
+        ]
+    },
+    {
+        "name": "Fish Idol",
+        "location": [
+            "cove"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "50% Debuff -25% DMG, -10 ACC until camp",
+                    "50% Debuff -12 DODGE, 3 round Marked until camp"
+                ]
+            },
+            {
+                "item": "water",
+                "result": "50% Buff 18% DMG until camp"
+            }
+        ]
+    },
+    {
+        "name": "Giant Fish Carcass",
+        "location": [
+            "cove"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "16.7% Gold, gems or supplies",
+                    "16.7% The Red Plague disease",
+                    "11.1% Blight",
+                    "5.5% Bleed",
+                    "50% Nothing"
+                ]
+            },
+            {
+                "item": "herb",
+                "result": "Any loot x3"
+            }
+        ]
+    },
+    {
+        "name": "Giant Oyster",
+        "location": [
+            "cove"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "40% Gold or trinket x2",
+                    "40% Bleed",
+                    "20% Nothing"
+                ]
+            },
+            {
+                "item": "shovel",
+                "result": "Gold or trinket x3"
+            },
+            {
+                "item": "treats",
+                "result": "Buff 25 DODGE"
+            }
+        ]
+    },
+    {
+        "name": "Ship's Figurehead",
+        "location": [
+            "cove"
+        ],
+        "use": [
+            {
+                "item": "nothing",
+                "result": [
+                    "66.7% Buff 20% SPD until camp",
+                    "33.3% Stress heal 30"
+                ]
+            }
+        ]
+    }
+]
