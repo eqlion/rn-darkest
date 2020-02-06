@@ -1,19 +1,30 @@
-import * as React from 'react';
-import { View } from 'react-native';
-import { Title, Subheading, Paragraph, Caption } from 'react-native-paper';
+import * as React from "react";
+import { View } from "react-native";
+import { Title, Subheading, Paragraph, Caption } from "react-native-paper";
 
-import Curio from "./Curio"
+import Curio from "./Curio";
 
 export default Curios = props => {
-    const { curios, location } = props;
-    
+    const { location, query } = props;
+
+    const data = require("../curios.json");
+
+    const search = query.toLowerCase();
+    let curios = [];
+    for (let curio of data) {
+        if (
+            curio["location"].includes(location) &&
+            (!search || curio["name"].toLowerCase().includes(search))
+        ) {
+            curios.push(curio);
+        }
+    }
+
     const capitalize = word => word.charAt(0).toUpperCase() + word.substring(1);
 
-    const _renderCards = () => {
+    const renderCards = curios => {
         if (!curios.length) {
-            return (
-                <Paragraph>Nothing found!</Paragraph>
-            )
+            return <Paragraph style={styles.text}>Nothing found!</Paragraph>;
         }
         const cards = [];
         for (let curio of curios) {
@@ -25,20 +36,37 @@ export default Curios = props => {
                 const results = [];
                 if (item === "nothing") {
                     for (let result of item_["result"]) {
-                        results.push(<Paragraph key={result}>{result}</Paragraph>)
+                        results.push(
+                            <Paragraph key={result} style={styles.result}>
+                                {result}
+                            </Paragraph>
+                        );
                     }
                 } else {
-                    results.push(<Paragraph key={item_["result"]}>{item_["result"]}</Paragraph>);
+                    results.push(
+                        <Paragraph key={item_["result"]} style={styles.result}>
+                            {item_["result"]}
+                        </Paragraph>
+                    );
                 }
-                description.push(<View key={item}><Subheading>{_format(item)}</Subheading><View>{results}</View></View>);
+                description.push(
+                    <View key={item}>
+                        <Subheading style={styles.item}>
+                            {format(item)}
+                        </Subheading>
+                        <View>{results}</View>
+                    </View>
+                );
             }
-            cards.push(<Curio name={name} key={name} description={description}/>);
+            cards.push(
+                <Curio name={name} key={name} description={description} />
+            );
         }
         return cards;
-    }
+    };
 
-    const _format = name => {
-        switch(name) {
+    const format = name => {
+        switch (name) {
             case "nothing":
                 return "Nothing";
             case "key":
@@ -56,8 +84,7 @@ export default Curios = props => {
             default:
                 return "Dog Treats";
         }
-    }
-
+    };
 
     return (
         <View>
@@ -65,15 +92,21 @@ export default Curios = props => {
                 <Title>Curios</Title>
                 <Caption>{capitalize(location)}</Caption>
             </View>
-            {_renderCards()}
+            {renderCards(curios)}
         </View>
-    )
-}
+    );
+};
 
 const styles = {
     text: {
         marginLeft: 20,
         marginTop: 16,
         marginBottom: 10
+    },
+    result: {
+        marginLeft: 20
+    },
+    item: {
+        fontWeight: "bold"
     }
-}
+};
