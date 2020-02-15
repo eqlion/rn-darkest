@@ -14,12 +14,14 @@ At the time of creating this app, I could not find a convenient Android app that
 
 1. [x] Actually integrate Redux
 
-2. [ ] Add dark theme
+2. [x] Add dark theme
 
 3. [x] Reorganize loading images
 
-4. [ ] Add tips on what would be effective during the expedition
+4. [x] Resize images properly
 
-5. [x] Restructure curio interaction outcomes in order to increase clarity
+5. [ ] Add tips on what would be effective during the expedition
 
-6. [ ] Add icon and loading screen image
+6. [x] Restructure curio interaction outcomes in order to increase clarity
+
+7. [ ] Add icon and loading screen (splash screen) image

@@ -4,46 +4,32 @@ import { Toolbar } from "react-native-material-ui";
 
 const STATUSBAR_HEIGHT = StatusBar.currentHeight;
 
-export default class Head extends React.Component {
-    state = {
-        query: "",
-    };
+export default Header = ({ changeQuery, changeTheme, theme }) => (
+    <View>
+        <View style={styles(theme).statusbar} />
+        <Toolbar
+            style={styles(theme).toolbar}
+            centerElement="Prepare"
+            searchable={{
+                autoFocus: true,
+                placeholder: "Curio",
+                onChangeText: changeQuery,
+                onSearchClosed: changeQuery
+            }}
+            leftElement={theme ? "brightness-4" : "brightness-7"}
+            onLeftElementPress={() => changeTheme()}
+        />
+    </View>
+);
 
-    _search = (query = "") => {
-        this.props.handler(query);
-        this.setState({ query });
-    }
-
-    render() {
-        return (
-            <View>
-                <View
-                    style={styles.statusbar}
-                />
-                <Toolbar
-                    style={styles.toolbar}
-                    centerElement="Prepare"
-                    searchable={{
-                        autoFocus: true,
-                        placeholder: "Curio",
-                        onChangeText: this._search,
-                        onSearchClosed: this._search,
-                    }}
-                    
-                />
-            </View>
-        )
-    }
-}
-
-const styles = {
+const styles = theme => ({
     statusbar: {
         height: STATUSBAR_HEIGHT,
-        backgroundColor: "#ffcc80"
+        backgroundColor: theme ? "#ffcc80" : "#121212"
     },
     toolbar: {
         container: {
-            backgroundColor: "#ffcc80",
+            backgroundColor: theme ? "#ffcc80" : "#121212"
         }
     }
-};
+});

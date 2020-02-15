@@ -1,47 +1,47 @@
 import * as React from "react";
-import { ScrollView } from "react-native-gesture-handler";
-import { Provider, DefaultTheme, Divider } from "react-native-paper";
 import { connect } from "react-redux";
+import { ScrollView } from "react-native-gesture-handler";
+import { Provider, DefaultTheme, Divider, DarkTheme } from "react-native-paper";
 
-import Header from "./containers/Header";
-import ProvisionContainer from "./containers/ProvisionContainer";
-import CuriosContainer from "./containers/CuriosContainer";
+import Header from "./containers/HeaderContainer";
+import Provision from "./containers/ProvisionContainer";
+import Curios from "./containers/CuriosContainer";
 import Choice from "./containers/Choice";
-import Curios from "./components/Curios";
 
-export default class MainScreen extends React.Component {
-    render() {
-        return (
-            <Provider theme={theme}>
-                <Header />
-                <ScrollView>
-                    <Choice />
-                    <Divider />
-                    <ProvisionContainer />
-                    <Divider />
-                    {/* <Curios location={"ruins"} query={""} /> */}
-                    <CuriosContainer />
-                </ScrollView>
-            </Provider>
-        );
-    }
-}
+const MainScreen = ({ theme }) => (
+    <Provider theme={theme ? lightTheme : darkTheme}>
+        <Header />
+        <ScrollView style={{ backgroundColor: theme ? "white" : "#121212" }}>
+            <Choice />
+            <Divider />
+            <Provision />
+            <Divider />
+            <Curios />
+        </ScrollView>
+    </Provider>
+);
 
-const theme = {
+const lightTheme = {
     ...DefaultTheme,
     dark: true,
     colors: {
         ...DefaultTheme.colors,
-        primary: "#ffcc80",
-        accent: "#ffab91"
-
-        // background: '#121212',
-        // surface: '#121212',
-        // text: "#fff",
-        // primary: "#fff",
-        // accent: "#fff",
-        // onBackground: '#FFFFFF',
-        // onSurface: '#FFFFFF',
-        // backdrop: '#FFFFFF'
+        primary: "#ffc107",
+        accent: "#ff7043"
     }
 };
+
+const darkTheme = {
+    ...DarkTheme,
+    colors: {
+        ...DarkTheme.colors,
+        primary: "#ffcc80",
+        accent: "#ffab91"
+    }
+};
+
+const mapStateToProps = state => ({
+    theme: state.theme
+});
+
+export default connect(mapStateToProps)(MainScreen);

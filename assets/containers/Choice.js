@@ -2,20 +2,12 @@ import * as React from "react";
 import { View } from "react-native";
 import { Card, Title } from "react-native-paper";
 import { connect } from "react-redux";
-import { changeLocation, changeDifficulty, changeQuery } from "../actions";
+import { changeLocation, changeDifficulty } from "../actions";
 
 import Radio from "../components/Radio";
 
 const Choice = props => {
-    const { location, difficulty } = props;
-
-    const changeLocation = location => {
-        props.changeLocation(location);
-    };
-
-    const changeDifficulty = difficulty => {
-        props.changeDifficulty(difficulty);
-    };
+    const { changeLocation, changeDifficulty, location, difficulty } = props;
 
     return (
         <Card style={styles.card}>

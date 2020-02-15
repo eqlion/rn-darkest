@@ -5,7 +5,7 @@ import { Title, Subheading, Paragraph, Caption } from "react-native-paper";
 import Curio from "./Curio";
 
 export default Curios = props => {
-    const { location, query } = props;
+    const { location, query, theme } = props;
 
     const data = require("../curios.json");
 
@@ -59,7 +59,12 @@ export default Curios = props => {
                 );
             }
             cards.push(
-                <Curio name={name} key={name} description={description} />
+                <Curio
+                    name={name}
+                    key={name}
+                    description={description}
+                    theme={theme}
+                />
             );
         }
         return cards;
