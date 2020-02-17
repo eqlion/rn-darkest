@@ -1,0 +1,58 @@
+{
+    "ruins": {
+        "Effective": [
+            ["Blight", "Low resistance"],
+            ["Crusader", "Extra damage against Unholy"],
+            ["Direct damage", "Few high protection enemies"]
+        ],
+        "Ineffective": [["Bleeds", "High resistance"]],
+        "Dangers": [
+            ["Bone spearman", "At low ranks"],
+            [
+                "Many stress dealers",
+                "Bone Courtier, Cultist Acolyte and Madman"
+            ],
+            ["Books and bookshelves", "High risk of bad outcome"]
+        ]
+    },
+    "warrens": {
+        "Effective": [
+            ["Bleeds", "Low resistance"],
+            ["Houndmaster", "Extra damage against Beast"],
+            ["Scouting", "Specific map layouts"]
+        ],
+        "Ineffective": [["Blight", "High resistance"]],
+        "Dangers": [
+            ["Swinetaur", "Especially in the back rows"],
+            ["Swine chopper", "Inflicts high bleeding, hard to kill"]
+        ]
+    },
+    "weald": {
+        "Effective": [
+            ["Bandages", "Curios and enemies inflict bleeding"],
+            ["Antivenom", "Curios and enemies inflict blight"],
+            ["Shovels", "Many walls"],
+            ["Holy water", "Curios affect quirks and stress positively"]
+        ],
+        "Dangers": [
+            ["Crone", "In front rows"],
+            ["Ectoplasm", "Can summon other enemies"],
+            ["Rabid Gnasher", "Fast and inflicts bleeds and diseases"]
+        ]
+    },
+    "cove": {
+        "Effective": [
+            ["Medicinal herbs", "Curio, traps, debuff interactions"],
+            ["Shovels", "Curio interactions"],
+            ["Bandages", "Many bleed inflicting enemies"],
+            ["Blight", "Low blight resistance and high protection"],
+            ["Protection debuff", "Enemies with high protection"],
+            ["Occultist", "Extra damage against Eldritch"]
+        ],
+        "Ineffective": [["Bleed", "High bleed resistance"]],
+        "Dangers": [
+            ["Pelagic Groupers", "Deal a lot of damage"],
+            ["Thrall", "Explodes and deals a lot of damage if left alive"]
+        ]
+    }
+}

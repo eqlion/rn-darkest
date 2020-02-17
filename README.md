@@ -20,7 +20,7 @@ At the time of creating this app, I could not find a convenient Android app that
 
 4. [x] Resize images properly
 
-5. [ ] Add tips on what would be effective during the expedition
+5. [x] Add tips on what would be effective during the expedition
 
 6. [x] Restructure curio interaction outcomes in order to increase clarity
 

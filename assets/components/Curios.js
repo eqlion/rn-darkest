@@ -2,12 +2,12 @@ import * as React from "react";
 import { View } from "react-native";
 import { Title, Subheading, Paragraph, Caption } from "react-native-paper";
 
-import Curio from "./Curio";
+import ItemCard from "./ItemCard";
 
 export default Curios = props => {
     const { location, query, theme } = props;
 
-    const data = require("../curios.json");
+    const data = require("../data/curios.json");
 
     const search = query.toLowerCase();
     let curios = [];
@@ -59,11 +59,12 @@ export default Curios = props => {
                 );
             }
             cards.push(
-                <Curio
+                <ItemCard
                     name={name}
                     key={name}
                     description={description}
                     theme={theme}
+                    image={true}
                 />
             );
         }

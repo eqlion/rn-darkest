@@ -7,6 +7,7 @@ import Header from "./containers/HeaderContainer";
 import Provision from "./containers/ProvisionContainer";
 import Curios from "./containers/CuriosContainer";
 import Choice from "./containers/Choice";
+import Tips from "./containers/TipsContainer";
 
 const MainScreen = ({ theme }) => (
     <Provider theme={theme ? lightTheme : darkTheme}>
@@ -15,6 +16,8 @@ const MainScreen = ({ theme }) => (
             <Choice />
             <Divider />
             <Provision />
+            <Divider />
+            <Tips />
             <Divider />
             <Curios />
         </ScrollView>

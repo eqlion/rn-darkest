@@ -26,7 +26,7 @@ export default Provision = ({ location, difficulty }) => {
         }
     };
 
-    const data = require("../provision.json");
+    const data = require("../data/provision.json");
     const entry = data[location][difficulty];
     const table = Object.keys(entry).map(key => (
         <DataTable.Row key={key}>
