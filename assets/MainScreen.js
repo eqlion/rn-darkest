@@ -1,7 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
 import { ScrollView } from "react-native-gesture-handler";
-import { Provider, DefaultTheme, Divider, DarkTheme } from "react-native-paper";
+import { Provider, DefaultTheme, DarkTheme } from "react-native-paper";
 
 import Header from "./containers/HeaderContainer";
 import Provision from "./containers/ProvisionContainer";
@@ -12,13 +12,14 @@ import Tips from "./containers/TipsContainer";
 const MainScreen = ({ theme }) => (
     <Provider theme={theme ? lightTheme : darkTheme}>
         <Header />
-        <ScrollView style={{ backgroundColor: theme ? "white" : "#121212" }}>
+        <ScrollView
+            style={{
+                backgroundColor: theme ? "white" : "#121212"
+            }}
+        >
             <Choice />
-            <Divider />
             <Provision />
-            <Divider />
             <Tips />
-            <Divider />
             <Curios />
         </ScrollView>
     </Provider>

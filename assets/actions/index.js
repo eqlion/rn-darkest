@@ -20,6 +20,7 @@ export const changeQuery = query => ({
     query
 });
 
-export const changeTheme = () => ({
-    type: THEME_CHANGE
+export const changeTheme = (theme = undefined) => ({
+    type: THEME_CHANGE,
+    theme
 });

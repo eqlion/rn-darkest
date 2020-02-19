@@ -1,11 +1,14 @@
 import * as React from "react";
-import { Provider as RRProvider } from "react-redux";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/es/integration/react";
 
 import MainScreen from "./assets/MainScreen";
-import store from "./assets/store";
+import { store, persistor } from "./assets/store";
 
 export default App = () => (
-    <RRProvider store={store}>
-        <MainScreen />
-    </RRProvider>
+    <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+            <MainScreen />
+        </PersistGate>
+    </Provider>
 );
