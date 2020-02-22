@@ -1,13 +1,14 @@
 import * as React from "react";
 import { connect } from "react-redux";
 import { ScrollView } from "react-native-gesture-handler";
-import { Provider, DefaultTheme, DarkTheme } from "react-native-paper";
+import { Provider } from "react-native-paper";
 
 import Header from "./containers/HeaderContainer";
 import Provision from "./containers/ProvisionContainer";
 import Curios from "./containers/CuriosContainer";
-import Choice from "./containers/Choice";
+import RadioGroup from "./containers/RadioGroupContainer";
 import Tips from "./containers/TipsContainer";
+import { lightTheme, darkTheme } from "./styles";
 
 const MainScreen = ({ theme }) => (
     <Provider theme={theme ? lightTheme : darkTheme}>
@@ -17,32 +18,13 @@ const MainScreen = ({ theme }) => (
                 backgroundColor: theme ? "white" : "#121212"
             }}
         >
-            <Choice />
+            <RadioGroup />
             <Provision />
             <Tips />
             <Curios />
         </ScrollView>
     </Provider>
 );
-
-const lightTheme = {
-    ...DefaultTheme,
-    dark: true,
-    colors: {
-        ...DefaultTheme.colors,
-        primary: "#ffc107",
-        accent: "#ff7043"
-    }
-};
-
-const darkTheme = {
-    ...DarkTheme,
-    colors: {
-        ...DarkTheme.colors,
-        primary: "#ffcc80",
-        accent: "#ffab91"
-    }
-};
 
 const mapStateToProps = state => ({
     theme: state.theme

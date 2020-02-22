@@ -1,16 +1,9 @@
 import * as React from "react";
 import { View } from "react-native";
-import {
-    Card,
-    Title,
-    Paragraph,
-    Caption,
-    Subheading
-} from "react-native-paper";
+import { Title, Paragraph, Caption, Subheading } from "react-native-paper";
 
 import ItemCard from "../components/ItemCard";
-
-// TODO: Rewrite Curio component to be usable here
+import { card } from "../styles";
 
 export default Tips = ({ location }) => {
     const capitalize = word => word.charAt(0).toUpperCase() + word.substring(1);
@@ -28,8 +21,10 @@ export default Tips = ({ location }) => {
             const result = item[1];
             tips.push(
                 <View key={reason}>
-                    <Subheading style={style.subheading}>{reason}</Subheading>
-                    <Paragraph style={style.result}>{result}</Paragraph>
+                    <Subheading style={{ fontWeight: "bold" }}>
+                        {reason}
+                    </Subheading>
+                    <Paragraph style={card.result}>{result}</Paragraph>
                 </View>
             );
         }
@@ -38,7 +33,7 @@ export default Tips = ({ location }) => {
     if (ineffective) {
         return (
             <View>
-                <View style={style.text}>
+                <View style={card.text}>
                     <Title>Tips</Title>
                     <Caption>{capitalize(location)}</Caption>
                 </View>
@@ -64,7 +59,7 @@ export default Tips = ({ location }) => {
     } else {
         return (
             <View>
-                <View style={style.text}>
+                <View style={card.text}>
                     <Title>Tips</Title>
                     <Caption>{capitalize(location)}</Caption>
                 </View>
@@ -82,19 +77,5 @@ export default Tips = ({ location }) => {
                 </View>
             </View>
         );
-    }
-};
-
-const style = {
-    subheading: {
-        fontWeight: "bold"
-    },
-    text: {
-        marginLeft: 20,
-        marginTop: 16,
-        marginBottom: 10
-    },
-    result: {
-        marginLeft: 20
     }
 };

@@ -2,10 +2,12 @@ import * as React from "react";
 import { View } from "react-native";
 import { RadioButton, Text } from "react-native-paper";
 
+import { radio } from "../styles";
+
 export default Radio = ({ labels, value, onPress }) => {
     const renderButtons = () => {
         return labels.map(label => (
-            <View key={label} style={styles.containerStyle}>
+            <View key={label} style={radio.containerStyle}>
                 <RadioButton value={label.toLowerCase()} />
                 <Text style={{ alignSelf: "center" }}>{label}</Text>
             </View>
@@ -24,14 +26,4 @@ export default Radio = ({ labels, value, onPress }) => {
             </RadioButton.Group>
         </View>
     );
-};
-
-const styles = {
-    containerStyle: {
-        padding: 5,
-        justifyContent: "flex-start",
-        flexDirection: "row",
-        position: "relative"
-        // flex: 1
-    }
 };

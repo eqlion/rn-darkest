@@ -1,31 +1,32 @@
 import * as React from "react";
 import { Card } from "react-native-paper";
+
 import icon from "../icons";
+import { cardCover, card } from "../styles";
 
 export default ItemCard = props => {
     const { name, description, theme, image } = props;
     if (image) {
         return (
-            <Card style={{ margin: 4 }}>
+            <Card style={card.card}>
                 <Card.Title title={name} />
-                <Card.Cover source={icon(name)} style={style(theme)} />
+                <Card.Cover
+                    source={icon(name)}
+                    style={
+                        theme
+                            ? { ...cardCover.common, ...cardCover.light }
+                            : { ...cardCover.common, ...cardCover.dark }
+                    }
+                />
                 <Card.Content>{description}</Card.Content>
             </Card>
         );
     } else {
         return (
-            <Card style={{ margin: 4 }}>
+            <Card style={card.card}>
                 <Card.Title title={name} />
                 <Card.Content>{description}</Card.Content>
             </Card>
         );
     }
 };
-
-const style = theme => ({
-    backgroundColor: theme ? "white" : "#1E1E1E",
-    flex: 1,
-    alignSelf: "center",
-    aspectRatio: 1,
-    resizeMode: "contain"
-});

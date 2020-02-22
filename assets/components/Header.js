@@ -1,14 +1,23 @@
 import * as React from "react";
-import { View, StatusBar } from "react-native";
+import { View } from "react-native";
 import { Toolbar } from "react-native-material-ui";
 
-const STATUSBAR_HEIGHT = StatusBar.currentHeight;
+import { header } from "../styles";
 
 export default Header = ({ changeQuery, changeTheme, theme }) => (
     <View>
-        <View style={styles(theme).statusbar} />
+        <View
+            style={
+                theme
+                    ? { ...header.common, ...header.light }
+                    : { ...header.common, ...header.dark }
+            }
+        />
         <Toolbar
-            style={styles(theme).toolbar}
+            // This piece of fucking garbage doesn't work without the "container" part
+            style={
+                theme ? { container: header.light } : { container: header.dark }
+            }
             centerElement="Prepare"
             searchable={{
                 autoFocus: true,
@@ -21,15 +30,3 @@ export default Header = ({ changeQuery, changeTheme, theme }) => (
         />
     </View>
 );
-
-const styles = theme => ({
-    statusbar: {
-        height: STATUSBAR_HEIGHT,
-        backgroundColor: theme ? "#ffcc80" : "#121212"
-    },
-    toolbar: {
-        container: {
-            backgroundColor: theme ? "#ffcc80" : "#121212"
-        }
-    }
-});

@@ -3,6 +3,7 @@ import { View } from "react-native";
 import { Title, Subheading, Paragraph, Caption } from "react-native-paper";
 
 import ItemCard from "./ItemCard";
+import { card } from "../styles";
 
 export default Curios = props => {
     const { location, query, theme } = props;
@@ -24,7 +25,7 @@ export default Curios = props => {
 
     const renderCards = curios => {
         if (!curios.length) {
-            return <Paragraph style={styles.text}>Nothing found!</Paragraph>;
+            return <Paragraph style={card.text}>Nothing found!</Paragraph>;
         }
         const cards = [];
         for (let curio of curios) {
@@ -37,21 +38,21 @@ export default Curios = props => {
                 if (item === "nothing") {
                     for (let result of item_["result"]) {
                         results.push(
-                            <Paragraph key={result} style={styles.result}>
+                            <Paragraph key={result} style={card.result}>
                                 {result}
                             </Paragraph>
                         );
                     }
                 } else {
                     results.push(
-                        <Paragraph key={item_["result"]} style={styles.result}>
+                        <Paragraph key={item_["result"]} style={card.result}>
                             {item_["result"]}
                         </Paragraph>
                     );
                 }
                 description.push(
                     <View key={item}>
-                        <Subheading style={styles.item}>
+                        <Subheading style={card.subheading}>
                             {format(item)}
                         </Subheading>
                         <View>{results}</View>
@@ -94,25 +95,11 @@ export default Curios = props => {
 
     return (
         <View>
-            <View style={styles.text}>
+            <View style={card.text}>
                 <Title>Curios</Title>
                 <Caption>{capitalize(location)}</Caption>
             </View>
             {renderCards(curios)}
         </View>
     );
-};
-
-const styles = {
-    text: {
-        marginLeft: 20,
-        marginTop: 16,
-        marginBottom: 10
-    },
-    result: {
-        marginLeft: 20
-    },
-    item: {
-        fontWeight: "bold"
-    }
 };

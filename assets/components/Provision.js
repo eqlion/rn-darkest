@@ -2,6 +2,8 @@ import * as React from "react";
 import { View } from "react-native";
 import { Card, DataTable, Title, Caption } from "react-native-paper";
 
+import { card } from "../styles";
+
 export default Provision = ({ location, difficulty }) => {
     const capitalize = word => word.charAt(0).toUpperCase() + word.substring(1);
 
@@ -37,13 +39,13 @@ export default Provision = ({ location, difficulty }) => {
 
     return (
         <View>
-            <View style={styles.text}>
+            <View style={card.text}>
                 <Title>Provision</Title>
                 <Caption>
                     {capitalize(location)} — {capitalize(difficulty)}
                 </Caption>
             </View>
-            <Card style={{ margin: 4 }}>
+            <Card style={card.card}>
                 <Card.Content>
                     <DataTable>
                         <DataTable.Header>
@@ -56,15 +58,4 @@ export default Provision = ({ location, difficulty }) => {
             </Card>
         </View>
     );
-};
-
-const styles = {
-    text: {
-        marginLeft: 20,
-        marginTop: 16,
-        marginBottom: 10
-    },
-    card: {
-        margin: 4
-    }
 };
