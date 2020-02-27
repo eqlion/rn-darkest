@@ -4,10 +4,13 @@
         "slug": "darkest",
         "privacy": "public",
         "sdkVersion": "36.0.0",
-        "platforms": ["ios", "android", "web"],
+        "platforms": ["android"],
         "version": "1.0.0",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
+        "description": "Companion app made for the Darkest Dungeon game",
+        "primaryColor": "#ffc107",
+        "githubUrl": "https://github.com/eqlion/rn-darkest",
         "splash": {
             "image": "./assets/splash.png",
             "resizeMode": "contain",
@@ -17,8 +20,9 @@
             "fallbackToCacheTimeout": 0
         },
         "assetBundlePatterns": ["**/*"],
-        "ios": {
-            "supportsTablet": true
+        "android": {
+            "package": "com.eqlion.darkest",
+            "versionCode": 1
         }
     }
 }

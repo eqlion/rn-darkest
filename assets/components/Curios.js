@@ -5,9 +5,7 @@ import { Title, Subheading, Paragraph, Caption } from "react-native-paper";
 import ItemCard from "./ItemCard";
 import { card } from "../styles";
 
-export default Curios = props => {
-    const { location, query, theme } = props;
-
+export default Curios = ({ location, query, theme }) => {
     const data = require("../data/curios.json");
 
     const search = query.toLowerCase();

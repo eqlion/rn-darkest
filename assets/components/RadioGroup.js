@@ -5,9 +5,12 @@ import { Card, Title } from "react-native-paper";
 import Radio from "./Radio";
 import { radio } from "../styles";
 
-export default RadioGroup = props => {
-    const { changeLocation, changeDifficulty, location, difficulty } = props;
-
+export default RadioGroup = ({
+    changeLocation,
+    changeDifficulty,
+    location,
+    difficulty
+}) => {
     return (
         <Card style={radio.card}>
             <Card.Content style={radio.containerStyle}>

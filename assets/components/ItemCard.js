@@ -4,8 +4,7 @@ import { Card } from "react-native-paper";
 import icon from "../icons";
 import { cardCover, card } from "../styles";
 
-export default ItemCard = props => {
-    const { name, description, theme, image } = props;
+export default ItemCard = ({ name, description, theme, image }) => {
     if (image) {
         return (
             <Card style={card.card}>
