@@ -2,11 +2,12 @@ import * as React from "react";
 import { View } from "react-native";
 import { Title, Paragraph, Caption, Subheading } from "react-native-paper";
 
-import ItemCard from "../components/ItemCard";
+import ItemCard from "./ItemCard";
 import { card } from "../styles";
 
 export default Tips = ({ location }) => {
-    const capitalize = word => word.charAt(0).toUpperCase() + word.substring(1);
+    const capitalize = (word) =>
+        word.charAt(0).toUpperCase() + word.substring(1);
 
     const data = require("../data/tips.json");
 
@@ -14,7 +15,7 @@ export default Tips = ({ location }) => {
     const ineffective = data[location].Ineffective;
     const dangers = data[location].Dangers;
 
-    const parseEfficiency = e => {
+    const parseEfficiency = (e) => {
         const tips = [];
         for (let item of e) {
             const reason = item[0];
