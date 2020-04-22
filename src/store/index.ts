@@ -1,12 +1,12 @@
 import { createStore } from "redux";
 import { AsyncStorage } from "react-native";
 import { persistStore, persistReducer } from "redux-persist";
-import rootReducer from "../reducers";
+import { rootReducer } from "../reducers";
 
 const persistConfig = {
     key: "@rn-darkest",
     storage: AsyncStorage,
-    whitelist: ["theme"]
+    whitelist: ["theme"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

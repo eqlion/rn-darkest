@@ -1,7 +1,5 @@
-import { StatusBar } from "react-native";
+import { StyleSheet } from "react-native";
 import { DefaultTheme, DarkTheme } from "react-native-paper";
-
-const STATUSBAR_HEIGHT = StatusBar.currentHeight;
 
 // MainScreen
 
@@ -11,8 +9,8 @@ export const lightTheme = {
     colors: {
         ...DefaultTheme.colors,
         primary: "#ffc107",
-        accent: "#ff7043"
-    }
+        accent: "#ff7043",
+    },
 };
 
 export const darkTheme = {
@@ -20,75 +18,65 @@ export const darkTheme = {
     colors: {
         ...DarkTheme.colors,
         primary: "#ffcc80",
-        accent: "#ffab91"
-    }
+        accent: "#ffab91",
+    },
 };
 
 // Curios, Tips, Provision
 
-export const card = {
+export const card = StyleSheet.create({
     text: {
-        marginLeft: 20,
+        marginHorizontal: 20,
         marginTop: 16,
-        marginBottom: 10
+        marginBottom: 10,
     },
     result: {
-        marginLeft: 20
+        marginLeft: 20,
     },
     subheading: {
-        fontWeight: "bold"
+        fontWeight: "bold",
     },
     card: {
-        margin: 4
-    }
-};
-
-// Header
-
-export const header = {
-    common: {
-        height: STATUSBAR_HEIGHT
+        margin: 4,
     },
-    light: {
-        backgroundColor: "#ffcc80"
-    },
-    dark: {
-        backgroundColor: "#121212"
-    }
-};
+});
+
+// export const searchbar = StyleSheet.create({
+//     marginBottom: 4,
+//     marginHorizontal: 4,
+// });
 
 // ItemCard
 
-export const cardCover = {
+export const cardCover = StyleSheet.create({
     common: {
-        flex: 1,
         alignSelf: "center",
         aspectRatio: 1,
-        resizeMode: "contain"
+        resizeMode: "contain",
     },
     light: {
-        backgroundColor: "white"
+        backgroundColor: "white",
     },
     dark: {
-        backgroundColor: "#1E1E1E"
-    }
-};
+        backgroundColor: "#1E1E1E",
+    },
+});
 
 // RadioGroup. Radio
 
-export const radio = {
+export const radio = StyleSheet.create({
     containerStyle: {
         padding: 5,
         justifyContent: "space-around",
         flexDirection: "row",
         alignItems: "flex-start",
-        position: "relative"
+        position: "relative",
     },
     radioButtons: {
         alignItems: "center",
-        flexDirection: "column"
+        flexDirection: "column",
     },
     card: {
-        margin: 4
-    }
-};
+        margin: 4,
+    },
+});

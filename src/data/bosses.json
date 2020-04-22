@@ -1,0 +1,308 @@
+[
+    {
+        "name": "Necromancer",
+        "type": ["unholy", "eldritch"],
+        "location": "ruins",
+        "size": 1,
+        "actions": 1,
+        "variations": ["Apprentice", "", "Lord"],
+        "stats": {
+            "hp": [105, 158, 215],
+            "hp_hard": [126, 190, 258],
+            "dodge": [0, 8.75, 22.5],
+            "prot": [0, 0, 0],
+            "speed": [8, 9, 10],
+            "stealth": ["None", "None", "None"]
+        },
+        "resistances": {
+            "stun": [75, 95, 115],
+            "blight": [20, 40, 60],
+            "bleed": [20, 40, 60],
+            "debuff": [40, 60, 80],
+            "move": [25, 45, 65]
+        },
+        "strategy": [
+            ["Crusader", "Extra DMG vs Unholy"],
+            ["Hellion", "Can reach the Necromancer in the backline"],
+            [
+                "Shieldbracker",
+                "Can reach in any ranks, deal with stealth on summons, break Guard on the Necromancer, apply blight"
+            ],
+            ["Plague Doctor", "Blight DMG"],
+            ["Grave Robber", "Blight DMG"],
+            ["Arbalest", "Use marks, damage backline"],
+            ["Man At Arms", "Soak DMG from summons, Guard allies"]
+        ],
+        "trophy": {
+            "name": "Necromancer's Collar",
+            "effects": ["+20% DMG vs Unholy", "+8% CRIT vs Unholy"]
+        }
+    },
+    {
+        "name": "Prophet",
+        "type": ["unholy"],
+        "location": "ruins",
+        "size": 1,
+        "actions": 1,
+        "variations": ["Sonorous", "Fulminating", "Gibbering"],
+        "stats": {
+            "hp": [105, 158, 215],
+            "hp_hard": [126, 190, 258],
+            "dodge": [5, 13.75, 27.5],
+            "prot": [0, 0, 0],
+            "speed": [0, 1, 2],
+            "stealth": ["None", "None", "None"]
+        },
+        "resistances": {
+            "stun": [100, 120, 145],
+            "blight": [0, 20, 45],
+            "bleed": [0, 20, 45],
+            "debuff": [20, 40, 65],
+            "move": [200, 320, 345]
+        },
+        "strategy": [
+            [
+                "Crusader",
+                "Extra DMG vs Unholy, need to clear planks to be within striking range"
+            ],
+            ["Hellion", "Can reach the backline"],
+            ["Grave Robber", "Blight DMG, boost to marked"],
+            ["Arbalest", "Use marks, damage backline"],
+            ["Occultist", "DMG lower debuff"],
+            ["Man At Arms", "Guard allies"]
+        ],
+        "trophy": {
+            "name": "Prophet's Eye",
+            "effects": [
+                "+15 ACC in rank 4",
+                "+3 SPD in rank 4",
+                "-15% stress in rank 4"
+            ]
+        }
+    },
+    {
+        "name": "Hag",
+        "type": ["human"],
+        "location": "weald",
+        "size": 2,
+        "actions": 2,
+        "variations": ["Wizened", "", "Witch"],
+        "stats": {
+            "hp": [66, 99, 135],
+            "hp_hard": [80, 119, 162],
+            "dodge": [5, 13.75, 27.5],
+            "prot": [0, 0, 0],
+            "speed": [5, 6, 7],
+            "stealth": ["None", "None", "None"]
+        },
+        "resistances": {
+            "stun": [100, 120, 145],
+            "blight": [60, 80, 105],
+            "bleed": [20, 40, 65],
+            "debuff": [40, 60, 85],
+            "move": [200, 220, 245]
+        },
+        "strategy": [
+            [
+                "Hellion",
+                "Can reach the Necromancer in the backline, might bring 2, once the first one is in the pot, you can continue the fight"
+            ],
+            ["Shieldbracker", "Can reach in any ranks"],
+            ["Arbalest", "Use marks, damage backline"],
+            ["Man At Arms", "Soak DMG from summons, Guard allies"]
+        ],
+        "trophy": {
+            "name": "Hag's Ladle",
+            "effects": [
+                "+30% to blight skill chance",
+                "+40% blight resistance",
+                "+40% disease resistance"
+            ]
+        }
+    },
+    {
+        "name": "Brigand Pounder",
+        "type": ["ironwork"],
+        "location": "weald",
+        "size": 1,
+        "actions": 0,
+        "variations": ["8", "12", "16"],
+        "stats": {
+            "hp": [76, 114, 156],
+            "hp_hard": [92, 137, 188],
+            "dodge": [0, 8.75, 22.5],
+            "prot": [20, 20, 25],
+            "speed": [0, 1, 2],
+            "stealth": ["None", "None", "None"]
+        },
+        "resistances": {
+            "stun": [200, 220, 245],
+            "blight": [200, 220, 245],
+            "bleed": [200, 220, 245],
+            "debuff": [200, 220, 245],
+            "move": [100, 120, 145]
+        },
+        "strategy": [
+            ["Shieldbracker", "Ignores PROT"],
+            [
+                "Bounty Hunter",
+                "Can stun the matchman, DMG bonus vs human/mark/stun"
+            ],
+            ["Grave Robber", "Ignores PROT"],
+            ["Arbalest", "Use marks, damage backline"],
+
+            ["Man At Arms", "Soak DMG from summons, Guard allies"]
+        ],
+        "trophy": {
+            "name": "Fuseman's Matchstick",
+            "effects": [
+                "+2 SPD",
+                "+10% DMG to ranged skills",
+                "+6% CRT to ranged skills"
+            ]
+        }
+    },
+    {
+        "name": "Swine",
+        "type": ["beast"],
+        "location": "warrens",
+        "size": 3,
+        "actions": 1,
+        "variations": ["Prince", "King", "God"],
+        "stats": {
+            "hp": [132, 198, 271],
+            "hp_hard": [159, 238, 326],
+            "dodge": [0, 8.75, 22.5],
+            "prot": [0, 0, 0],
+            "speed": [0, 1, 2],
+            "stealth": ["None", "None", "None"]
+        },
+        "resistances": {
+            "stun": [100, 120, 145],
+            "blight": [0, 20, 45],
+            "bleed": [0, 20, 45],
+            "debuff": [20, 40, 65],
+            "move": [100, 120, 145]
+        },
+        "strategy": [
+            ["Houndmaster", "Extra DMG vs Beasts/Marked"],
+            ["Leper", "Self heal, self buff PROP, high DMG"],
+            ["Shieldbracker", "Make ally immune to mark"],
+            ["Arbalest", "Clear marks on allies"],
+            ["Man At Arms", "Soak DMG, Guard allies"]
+        ],
+        "trophy": {
+            "name": "Wilbur's Flag",
+            "effects": ["+50% Stun resist", "+10 DODGE"]
+        }
+    },
+    {
+        "actions": 1,
+        "location": "warrens",
+        "name": "Flesh",
+        "resistances": {
+            "bleed": [40, 60, 85],
+            "blight": [20, 40, 65],
+            "debuff": [20, 40, 65],
+            "move": [200, 220, 245],
+            "stun": [50, 70, 95]
+        },
+        "size": 1,
+        "stats": {
+            "dodge": [0.0, 8.75, 22.5],
+            "hp": [100, 152, 204],
+            "hp_hard": [120, 183, 245],
+            "prot": [50, 60, 70],
+            "speed": [5, 6, 7],
+            "stealth": ["None", "None", "None"]
+        },
+        "strategy": [
+            ["Houndmaster", "Stack bleeds on all four parts of the boss"],
+            ["Flagellant", "Stack bleeds"],
+            ["Jester", "Stack bleeds"],
+            ["Plague Doctor", "2x, Stack blights"],
+            ["Abomination", "2x, Stack blights"],
+            ["Man At Arms", "High PROT, Guard allies"]
+        ],
+        "trophy": {
+            "name": "Flesh's Heart",
+            "effects": ["+50% to bleed resistance", "+15% max HP"]
+        },
+        "type": ["Eldritch"],
+        "variations": ["Inchoate", "Unstable", "Formless"]
+    },
+    {
+        "name": "Siren",
+        "type": ["Eldritch"],
+        "location": "cove",
+        "size": 2,
+        "actions": 2,
+        "variations": ["", "Alluring", "Beguiling"],
+        "stats": {
+            "hp": [119, 179, 244],
+            "hp_hard": [143, 215, 293],
+            "dodge": [12.5, 21.25, 35.0],
+            "prot": [0, 0, 0],
+            "speed": [5, 6, 7],
+            "stealth": ["None", "None", "None"]
+        },
+        "resistances": {
+            "stun": [50, 75, 100],
+            "blight": [40, 60, 85],
+            "bleed": [60, 80, 105],
+            "debuff": [40, 60, 85],
+            "move": [25, 45, 70]
+        },
+        "strategy": [
+            [
+                "General",
+                "Siren will charm one of your heros, prepare to fight with 3 left; charmed heroes will use their skills against you"
+            ],
+            ["Occultist", "Extra DMG vs Eldritch, inflict blight"]
+        ],
+        "trophy": {
+            "name": "Siren's Conch",
+            "effects": ["+50% Debuff resist", "-20% Stress"]
+        }
+    },
+    {
+        "name": "Crew",
+        "type": ["Unholy"],
+        "location": "cove",
+        "size": 3,
+        "actions": 2,
+        "variations": ["Sodden", "Sunken", "Drowned"],
+        "stats": {
+            "hp": [100, 150, 205],
+            "hp_hard": [120, 180, 246],
+            "dodge": [0.0, 8.75, 22.5],
+            "prot": [0, 0, 0],
+            "speed": [3, 4, 5],
+            "stealth": ["None", "None", "None"]
+        },
+        "resistances": {
+            "stun": [50, 70, 95],
+            "blight": [20, 40, 65],
+            "bleed": [60, 80, 105],
+            "debuff": [20, 40, 65],
+            "move": [200, 220, 245]
+        },
+        "strategy": [
+            [
+                "Leper",
+                "Extra DMG vs Unholy, first line will be targeted by Anchorman, can self heal stress"
+            ],
+            [
+                "Highwayman",
+                "If chained by Anchorman, can use Point Blank Shots every turn without moving back"
+            ],
+            ["Grave Robber", "Apply blight"],
+            ["Plague Doctor", "Apply blight"],
+            ["Occultist", "Extra DMG on the way to the boss, heal"]
+        ],
+        "trophy": {
+            "name": "Crew's Bell",
+            "effects": ["+50% Move resist", "+20% Healing received"]
+        }
+    }
+]

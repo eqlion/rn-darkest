@@ -1,5 +1,6 @@
-{
-    "ruins": {
+[
+    {
+        "location": "ruins",
         "Effective": [
             ["Blight", "Low resistance"],
             ["Crusader", "Extra damage against Unholy"],
@@ -15,7 +16,8 @@
             ["Books and bookshelves", "High risk of bad outcome"]
         ]
     },
-    "warrens": {
+    {
+        "location": "warrens",
         "Effective": [
             ["Bleeds", "Low resistance"],
             ["Houndmaster", "Extra damage against Beast"],
@@ -27,7 +29,8 @@
             ["Swine chopper", "Inflicts high bleeding, hard to kill"]
         ]
     },
-    "weald": {
+    {
+        "location": "weald",
         "Effective": [
             ["Bandages", "Curios and enemies inflict bleeding"],
             ["Antivenom", "Curios and enemies inflict blight"],
@@ -40,7 +43,8 @@
             ["Rabid Gnasher", "Fast and inflicts bleeds and diseases"]
         ]
     },
-    "cove": {
+    {
+        "location": "cove",
         "Effective": [
             ["Medicinal herbs", "Curio, traps, debuff interactions"],
             ["Shovels", "Curio interactions"],
@@ -55,4 +59,4 @@
             ["Thrall", "Explodes and deals a lot of damage if left alive"]
         ]
     }
-}
+]

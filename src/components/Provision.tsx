@@ -1,13 +1,17 @@
 import * as React from "react";
 import { View } from "react-native";
-import { Card, DataTable, Title, Caption } from "react-native-paper";
+import { Card, DataTable } from "react-native-paper";
 
 import { card } from "../styles";
+import { capitalize } from "../utils";
 
-export default Provision = ({ location, difficulty }) => {
-    const capitalize = word => word.charAt(0).toUpperCase() + word.substring(1);
+interface IProps {
+    location: "ruins" | "warrens" | "weald" | "cove";
+    difficulty: "short" | "medium" | "long";
+}
 
-    const formatItemName = (item, number) => {
+export default ({ location, difficulty }: IProps) => {
+    const formatItemName = (item: string, number: number) => {
         switch (item) {
             case "food":
                 return "Food";
@@ -30,7 +34,7 @@ export default Provision = ({ location, difficulty }) => {
 
     const data = require("../data/provision.json");
     const entry = data[location][difficulty];
-    const table = Object.keys(entry).map(key => (
+    const table = Object.keys(entry).map((key) => (
         <DataTable.Row key={key}>
             <DataTable.Cell>{formatItemName(key, entry[key])}</DataTable.Cell>
             <DataTable.Cell numeric>{entry[key]}</DataTable.Cell>
@@ -39,12 +43,6 @@ export default Provision = ({ location, difficulty }) => {
 
     return (
         <View>
-            <View style={card.text}>
-                <Title>Provision</Title>
-                <Caption>
-                    {capitalize(location)} — {capitalize(difficulty)}
-                </Caption>
-            </View>
             <Card style={card.card}>
                 <Card.Content>
                     <DataTable>

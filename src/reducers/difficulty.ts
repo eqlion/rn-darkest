@@ -1,6 +1,6 @@
-import { DIFFICULTY_CHANGE } from "../actions/actionTypes";
+import { DIFFICULTY_CHANGE, ActionTypes } from "../actions/types";
 
-export default difficulty = (state = "short", action) => {
+export default (state = "short", action: ActionTypes) => {
     switch (action.type) {
         case DIFFICULTY_CHANGE:
             return action.difficulty;
