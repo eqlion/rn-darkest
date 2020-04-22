@@ -8,7 +8,6 @@ interface Props {
     description: JSX.Element[] | JSX.Element;
     theme?: boolean;
     image?: number;
-    location?: string[];
 }
 
 export default ({ name, description, theme, image }: Props) => (

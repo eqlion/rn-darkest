@@ -1,0 +1,269 @@
+[
+    {
+        "category": "positive_next_quest",
+        "events": [
+            {
+                "name": "Valiant Spirit",
+                "effect": "Party Gains +15% Virtue Chance on Next Quest"
+            },
+            {
+                "name": "Bumper Crop",
+                "effect": "Supply costs change by -100%, Provision costs change by -100%"
+            },
+            {
+                "name": "Silence in The Crypts",
+                "effect": "Party Gains +33% Resolve XP in Ruins on Next Quest, Party Gains +15% DMG in Ruins on Next Quest"
+            },
+            {
+                "name": "Sunshine in the Thicket",
+                "effect": "Party Gains +33% Resolve XP in Weald on Next Quest, Party Gains +15% DMG in Weald on Next Quest"
+            },
+            {
+                "name": "Fresh Air in the Tunnels",
+                "effect": "Party Gains +33% Resolve XP in Warrens on Next Quest, Party Gains +15% DMG in Warrens on Next Quest"
+            },
+            {
+                "name": "Gentle Tide",
+                "effect": "Party Gains +33% Resolve XP in Cove on Next Quest, Party Gains +15% DMG in Cove on Next Quest"
+            },
+            {
+                "name": "Supply Run",
+                "effect": "Supply costs change by -50%, Provision costs change by -50%"
+            },
+            {
+                "name": "Helping Hand",
+                "effect": "Level Restrictions Removed for Next Quest"
+            },
+            {
+                "name": "In Radiance",
+                "effect": "Torchlight dims much more slowly this week"
+            },
+            {
+                "name": "The Lights",
+                "effect": "All shards gained this week is doubled"
+            }
+        ]
+    },
+    {
+        "category": "negative_next_quest",
+        "events": [
+            {
+                "name": "The Dark is Rising",
+                "effect": "Party Gains -15% Virtue Chance on Next Quest"
+            },
+            {
+                "name": "Lost Shipment",
+                "effect": "Supply Quantities change by -50%, Provision quantities change by -50%"
+            }
+        ]
+    },
+    {
+        "category": "positive_town_activities",
+        "events": [
+            { "name": "A Job Well Done", "effect": "Free Upgrade: Armour x 1" },
+            { "name": "Lost and Found", "effect": "Free Upgrade: Weapon x 1" },
+            { "name": "Labour Force", "effect": "Free Upgrade: Building x 1" },
+            {
+                "name": "Town Fair",
+                "effect": "All Stress Relief Activities &amp; Sanitarium Free"
+            },
+            {
+                "name": "A Ray of Sunlight",
+                "effect": "All Stress Relief Activities More Effective"
+            },
+            {
+                "name": "One Good Week",
+                "effect": "All Idle Heroes +33% Stress Heals"
+            },
+            {
+                "name": "Mardis Gras",
+                "effect": "Bar is Free, Gambling Hall is Free, Brothel is Free"
+            },
+            {
+                "name": "Empty Kegs",
+                "effect": "Bar is Locked, Gambling Hall costs change by -50%, Brothel costs change by -50%"
+            },
+            {
+                "name": "Daylight Robbery",
+                "effect": "Gambling Hall is Locked, Bar costs change by -50%, Brothel costs change by -50%"
+            },
+            {
+                "name": "Laundry Day",
+                "effect": "Brothel is Locked, Gambling Hall costs change by -50%, Bar costs change by -50%"
+            },
+            {
+                "name": "All Saints Day",
+                "effect": "Cloister is Free, Transept is Free, Penance Hall is Free"
+            },
+            {
+                "name": "Noisy Repairs",
+                "effect": "Cloister is Locked, Transept costs change by -50%, Penance Hall costs change by -50%"
+            },
+            {
+                "name": "Absent Abbot",
+                "effect": "Transept is Locked, Cloister costs change by -50%, Penance Hall costs by -50%"
+            },
+            {
+                "name": "Cell Cleaning",
+                "effect": "Penance Hall is Locked, Cloister costs change by -50%, Transept costs change by -50%"
+            },
+            { "name": "Caregivers Convention", "effect": "Sanitarium is Free" },
+            {
+                "name": "Medical Breakthrough",
+                "effect": "Medical Devices is Free"
+            },
+            { "name": "Nomad New Year", "effect": "Trinkets discounted 50%" },
+            {
+                "name": "Cornerstone",
+                "effect": "1 Blueprint awarded! This event appears between week 7 and 10, and only occurs once."
+            }
+        ]
+    },
+    {
+        "category": "negative_town_activities",
+        "events": [
+            {
+                "name": "The Miserable Dark",
+                "effect": "All Stress Relief Activities Less Effective"
+            }
+        ]
+    },
+    {
+        "category": "resolve_xp",
+        "events": [
+            {
+                "name": "Revelry",
+                "effect": "You get 2 Hellions you may add to your roster"
+            },
+            {
+                "name": "Leper Colony",
+                "effect": "You get 2 Lepers you may add to your roster"
+            },
+            {
+                "name": "Wyrd Council",
+                "effect": "You get 2 Occultists you may add to your roster"
+            },
+            {
+                "name": "Rumour of Riches",
+                "effect": "You get 2 Bounty Hunters you may add to your roster"
+            },
+            {
+                "name": "Holy Gathering",
+                "effect": "You get 2 Vestals you may add to your roster"
+            },
+            {
+                "name": "Antique Roadshow",
+                "effect": "You get 2 Antiquarians you may add to your roster"
+            },
+            {
+                "name": "Call of the Crusade",
+                "effect": "You get 2 Crusaders you may add to your roster"
+            },
+            {
+                "name": "A Gibbous Moon",
+                "effect": "Idle Abominations gain 1 Resolve Level"
+            },
+            {
+                "name": "The Plague",
+                "effect": "Idle Plague Doctors gain 1 Resolve Level"
+            },
+            {
+                "name": "Eat the Rich",
+                "effect": "Idle Grave Robbers gain 1 Resolve Level"
+            },
+            {
+                "name": "Rats Among Us",
+                "effect": "Idle Houndmasters gain 1 Resolve Level"
+            },
+            {
+                "name": "Idle Busking",
+                "effect": "Idle Jesters gain 1 Resolve Level"
+            },
+            {
+                "name": "Archery Tournament",
+                "effect": "Idle Arbalests gain 1 Resolve LevelIdle Musketeers* gain 1 Resolve Level"
+            },
+            {
+                "name": "Laying Low",
+                "effect": "Idle Highwaymen gain 1 Resolve Level"
+            },
+            {
+                "name": "Militia Training",
+                "effect": "Idle Men-at-Arms gain 1 Resolve Level"
+            },
+            {
+                "name": "A Day Long Awaited",
+                "effect": "Stagecoach has an additional 6 recruits for this week."
+            },
+            {
+                "name": "Blood Scourge",
+                "effect": "The Flagellant can now be found in the Stage Coach. You may also add 1 to your roster. This event only appears on week 5, and only occurs once."
+            },
+            {
+                "name": "Blood Pilgrimage",
+                "effect": "You get 2 Flagellants you may add to your roster"
+            },
+            {
+                "name": "A Desert Wind",
+                "effect": "The Shieldbreaker can now be found in the Stage Coach. You may also add 1 to your roster. This event appears every time after week 3, but only occurs once."
+            },
+            {
+                "name": "The Adder's Kiss",
+                "effect": "You get 2 Shieldbreakers you may add to your roster"
+            },
+            {
+                "name": "Experienced Hero for Hire",
+                "effect": "You may recruit a resolve 6 hero for 20 shards."
+            }
+        ]
+    },
+    {
+        "category": "special",
+        "events": [
+            {
+                "name": "From Beyond",
+                "effect": "You get a choice of 1 of 3 random heroes from your graveyard to resurrect. The resurrected hero will keep their resolve level, but their skills, armour and weapon will be lost."
+            },
+            {
+                "name": "Brigand Incursion",
+                "effect": "Triggers Plot Quest: Wolves at the Door, a lvl 6 mission involving fighting bandits attempting to raid the town lead by their leader, The Vvulf. There are three potential Ancestor's Knapsacks available on the map."
+            },
+            {
+                "name": "A Thief in the Night",
+                "effect": "\"The Shrieker has stolen 8 of your Trinkets!\"Triggers Plot Quest: your party fights the Shrieker and attempt to gain the treasures it has collected from you. Should your heroes survive, the trinkets will be given as Quest Rewards after choosing to return to the Hamlet."
+            },
+            {
+                "name": "Shrieker's Prize",
+                "effect": "Triggers Plot Quest: Shrieker's Prize, a mission in the Weald where your party fights the Horrid Shrieker and attempt to gain the treasures it has collected."
+            },
+            {
+                "name": "A Maddening Whine",
+                "effect": "Triggers Plot Quest: Burn the Hives, a mission in The Courtyard. This event only appears on week 3, and only occurs once."
+            },
+            {
+                "name": "The Town is Abuzz!",
+                "effect": "Stress reduction activities in town are slightly less effective. Only triggers if the quest \"Burn the Hives\" is not completed after it becomes available. This event will keep repeating unless a priority event occurs (such as Blood Scourge) or \"Burn the Hives\" is completed."
+            },
+            {
+                "name": "Heresy in the Blood",
+                "effect": "Triggers The Fanatic to spawn if at least two of your heroes who enter the next dungeon have the Crimson Curse. 20% chance with 2-3 heroes, 75% chance with 4."
+            },
+            {
+                "name": "A Veil Lifted",
+                "effect": "Removes the Crimson Curse from all affected heroes. This event only occurs after beating the Baron, Viscount or Countess"
+            },
+            {
+                "name": "They Made a Tonic",
+                "effect": "For 30 shards every hero in the roster has 1 diseased cured. This also applies to the Crimson Curse."
+            },
+            {
+                "name": "Crystaline Focii",
+                "effect": "For 30 shards every hero in the roster heals 50 stress."
+            },
+            {
+                "name": "Shard Harvest",
+                "effect": "Gain +25 shards."
+            }
+        ]
+    }
+]
