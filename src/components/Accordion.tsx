@@ -9,6 +9,7 @@ import Tips from "../containers/TipsContainer";
 import Provision from "../containers/ProvisionContainer";
 import Bosses from "../containers/BossesContainer";
 import Events from "../components/Events";
+import Trinkets from "../components/Triknets";
 
 import { capitalize } from "../utils";
 
@@ -19,7 +20,16 @@ import {
     IDropdownSection as ISection,
 } from "../types";
 
-const icons = ["briefcase", "lightbulb", "shape", "sword", "bell"];
+// const icons = ["briefcase", "lightbulb", "shape", "sword", "bell", "shield"];
+
+enum icons {
+    "briefcase",
+    "lightbulb",
+    "shape",
+    "sword",
+    "bell",
+    "shield",
+}
 
 export default ({ theme, location, difficulty }: IProps) => {
     const SECTIONS = [
@@ -50,6 +60,11 @@ export default ({ theme, location, difficulty }: IProps) => {
         {
             title: "Town events",
             content: <Events />,
+            caption: undefined,
+        },
+        {
+            title: "Kickstarter Trinkets",
+            content: <Trinkets />,
             caption: undefined,
         },
     ];

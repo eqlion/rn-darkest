@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Beloved's Ring",
+        "effects": [
+            "+5 ACC",
+            "+10% DMG",
+            "+4 SPD",
+            "-10% Bleed Resist",
+            "-10% Blight Resist",
+            "-10% Disease Resist"
+        ]
+    },
+    {
+        "name": "Da powar",
+        "effects": [
+            "+5 ACC",
+            "+10% DMG",
+            "+5 ACC",
+            "-30% Trap Disarm while Camping"
+        ]
+    },
+    {
+        "name": "Dad Jokes",
+        "effects": [
+            "+23% Healing Skills",
+            "-10% Stun Resist on First Round",
+            "-6 DODGE Melee Skills"
+        ]
+    },
+    {
+        "name": "Dano's Glory",
+        "effects": [
+            "+4% CRT",
+            "+5 ACC",
+            "+4 SPD",
+            "-4% Scouting Chance on First Round",
+            "-10% Stun Resist on First Round",
+            "-8% Virtue Chance on First Round"
+        ]
+    },
+    {
+        "name": "Drop of rain",
+        "effects": [
+            "+13% Healing Skills",
+            "+13% Heals Received",
+            "+20% Resolve XP if Torch above 75",
+            "+10% Stress if Torch below 26",
+            "-10% Stun Resist if Torch below 26",
+            "-10% Debuff Resist if Torch below 26"
+        ]
+    },
+    {
+        "name": "Goliath Killer",
+        "effects": [
+            "+6 ACC if in position 1",
+            "+13% DMG if in position 1",
+            "+5% CRT if in position 1",
+            "-10% Trap Disarm if in position 4",
+            "-8% Chance Monsters Surprised if in position 4",
+            "-13% Healing Skills if in position 4"
+        ]
+    },
+    {
+        "name": "Mizir's Unfinished Bestiary",
+        "effects": [
+            "+15% DMG vs Eldritch",
+            "+15% DMG vs Unholy",
+            "+10% Stress",
+            "-4 SPD"
+        ]
+    },
+    {
+        "name": "Necronomicon",
+        "effects": [
+            "+13% Healing Skills",
+            "+13% Healing Skills",
+            "+4 SPD",
+            "-48% Resolve XP"
+        ]
+    },
+    {
+        "name": "Oviria",
+        "effects": [
+            "+3 DODGE",
+            "+2 ACC",
+            "+2 SPD",
+            "-10% Move Resist at Death's Door"
+        ]
+    },
+    {
+        "name": "Ravenous Lion's Ring",
+        "effects": [
+            "+15% DMG Melee Skills",
+            "+6% CRT Melee Skills",
+            "+50% Food consumed",
+            "+50% DMG when starving"
+        ]
+    },
+    {
+        "name": "The Scarecrow's Brain",
+        "effects": ["+39% Healing Skills", "-15 ACC"]
+    }
+]

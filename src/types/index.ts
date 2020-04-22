@@ -120,3 +120,8 @@ export interface IDataInstance {
     Ineffective?: string[][];
     Dangers: string[][];
 }
+
+export interface ITrinket {
+    name: string;
+    effects: string[];
+}
