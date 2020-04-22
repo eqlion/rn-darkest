@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import { View } from "react-native";
 import { Searchbar, Paragraph, Subheading } from "react-native-paper";
+
 import ItemCard from "./ItemCard";
+
 import { card } from "../styles";
+import { ICategory } from "../types";
+
 import data from "../data/events.json";
-
-interface IEvent {
-    name: string;
-    effect: string;
-}
-
-interface ICategory {
-    category: string;
-    events: IEvent[];
-}
 
 export default () => {
     const [query, setQuery] = useState<string>("");
@@ -32,7 +26,6 @@ export default () => {
                 </View>
             ))
     );
-    console.log(pnq);
     return (
         <>
             <Searchbar
@@ -62,7 +55,7 @@ export default () => {
                 }
             />
             <ItemCard
-                name="Negative town activities"
+                name="Positive town activities"
                 description={
                     pta.length !== 0 ? (
                         pta
@@ -72,7 +65,7 @@ export default () => {
                 }
             />
             <ItemCard
-                name="Positive town activities"
+                name="Negative town activities"
                 description={
                     nta.length !== 0 ? (
                         nta

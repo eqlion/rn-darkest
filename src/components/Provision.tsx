@@ -3,12 +3,9 @@ import { View } from "react-native";
 import { Card, DataTable } from "react-native-paper";
 
 import { card } from "../styles";
-import { capitalize } from "../utils";
+import { IProvisionProps as IProps } from "../types";
 
-interface IProps {
-    location: "ruins" | "warrens" | "weald" | "cove";
-    difficulty: "short" | "medium" | "long";
-}
+import { capitalize } from "../utils";
 
 export default ({ location, difficulty }: IProps) => {
     const formatItemName = (item: string, number: number) => {

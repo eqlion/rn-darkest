@@ -8,47 +8,49 @@ import Curios from "../containers/CuriosContainer";
 import Tips from "../containers/TipsContainer";
 import Provision from "../containers/ProvisionContainer";
 import Bosses from "../containers/BossesContainer";
-
 import Events from "../components/Events";
 
 import { capitalize } from "../utils";
 
 import { card } from "../styles";
 
-interface ISection {
-    title: string;
-    content: JSX.Element;
-}
-
-interface IProps {
-    location: string;
-    difficulty: string;
-    theme: boolean;
-}
+import {
+    IAccordionProps as IProps,
+    IDropdownSection as ISection,
+} from "../types";
 
 const icons = ["briefcase", "lightbulb", "shape", "sword", "bell"];
 
-export default (props: IProps) => {
+export default ({ theme, location, difficulty }: IProps) => {
     const SECTIONS = [
         {
             title: "Provision",
             content: <Provision />,
+            caption: (
+                <Caption>
+                    {capitalize(location) + " — " + capitalize(difficulty)}
+                </Caption>
+            ),
         },
         {
             title: "Tips",
             content: <Tips />,
+            caption: <Caption>{capitalize(location)}</Caption>,
         },
         {
             title: "Curio",
             content: <Curios />,
+            caption: <Caption>{capitalize(location)}</Caption>,
         },
         {
             title: "Bosses",
             content: <Bosses />,
+            caption: <Caption>{capitalize(location)}</Caption>,
         },
         {
             title: "Town events",
             content: <Events />,
+            caption: undefined,
         },
     ];
     const [activeSections, setActiveSections] = useState<number[]>([]);
@@ -78,22 +80,17 @@ export default (props: IProps) => {
                     <Icon
                         name={icons[index]}
                         size={25}
-                        color={props.theme ? "black" : "white"}
+                        color={theme ? "black" : "white"}
                     />
                     <View style={{ marginHorizontal: 16 }}>
                         <Title>{section.title}</Title>
-                        <Caption>
-                            {capitalize(props.location)}
-                            {section.title === "Provision"
-                                ? " — " + capitalize(props.difficulty)
-                                : ""}
-                        </Caption>
+                        {section.caption}
                     </View>
                 </View>
                 <Icon
                     name={isActive ? "chevron-up" : "chevron-down"}
                     size={25}
-                    color={props.theme ? "black" : "white"}
+                    color={theme ? "black" : "white"}
                 />
             </View>
         );

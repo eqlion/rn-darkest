@@ -1,19 +1,14 @@
 import { connect } from "react-redux";
 
-import { RootState } from "../reducers";
-
 import Curios from "../components/Curios";
 
-interface StateProps {
-    location: string;
-    theme: boolean;
-}
+import { RootState, ICuriosProps } from "../types";
 
 const mapStateToProps = (state: RootState) => ({
     location: state.location,
     theme: state.theme,
 });
 
-export default connect<StateProps, null, {}, RootState>(mapStateToProps)(
+export default connect<ICuriosProps, null, {}, RootState>(mapStateToProps)(
     Curios
 );

@@ -1,14 +1,11 @@
 import { connect } from "react-redux";
 
-import { RootState } from "../reducers";
-import Tips from "../components/Tips";
+import { RootState, ITipsProps } from "../types";
 
-interface StateProps {
-    location: string;
-}
+import Tips from "../components/Tips";
 
 const mapStateToProps = (state: RootState) => ({
     location: state.location,
 });
 
-export default connect<StateProps, null, {}, RootState>(mapStateToProps)(Tips);
+export default connect<ITipsProps, null, {}, RootState>(mapStateToProps)(Tips);

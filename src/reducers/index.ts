@@ -10,4 +10,9 @@ export const rootReducer = combineReducers({
     theme,
 });
 
-export type RootState = ReturnType<typeof rootReducer>;
+// export type RootState = ReturnType<typeof rootReducer>;
+export interface RootState {
+    location: "ruins" | "weald" | "cove" | "warrens";
+    theme: boolean;
+    difficulty: "short" | "medium" | "long";
+}

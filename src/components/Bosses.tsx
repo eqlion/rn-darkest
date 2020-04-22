@@ -1,44 +1,16 @@
 import React from "react";
 import { View } from "react-native";
-import ItemCard from "./ItemCard";
-import { card } from "../styles";
-import data from "../data/bosses.json";
 import { Paragraph, Subheading, DataTable, Caption } from "react-native-paper";
-import { bossImage } from "../../assets/images";
-import { capitalize } from "../utils";
-interface IProps {
-    location: string;
-    theme: boolean;
-}
 
-interface IBoss {
-    name: string;
-    type: string[];
-    location: "ruins" | "weald" | "cove" | "warrens";
-    size: 1 | 2 | 3 | 4;
-    actions: 1 | 2 | 3 | 4;
-    variations: [string, string, string];
-    stats: {
-        hp: [number, number, number];
-        hp_hard: [number, number, number];
-        dodge: [number, number, number];
-        speed: [number, number, number];
-        prot: [number, number, number];
-        stealth: [string, string, string];
-    };
-    resistances: {
-        stun: [number, number, number];
-        blight: [number, number, number];
-        bleed: [number, number, number];
-        debuff: [number, number, number];
-        move: [number, number, number];
-    };
-    strategy: [string, string][];
-    trophy: {
-        name: string;
-        effects: string[];
-    };
-}
+import ItemCard from "./ItemCard";
+
+import { card } from "../styles";
+import { IBossesProps as IProps, IBoss } from "../types";
+
+import { capitalize } from "../utils";
+import { bossImage } from "../../assets/images";
+
+import data from "../data/bosses.json";
 
 export default ({ location, theme }: IProps) => {
     const currentBosses = (data as IBoss[]).filter(

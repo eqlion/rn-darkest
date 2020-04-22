@@ -3,14 +3,16 @@ import { View } from "react-native";
 import { Card, Title } from "react-native-paper";
 
 import Radio from "./Radio";
-import { radio } from "../styles";
 
-export default RadioGroup = ({
+import { radio } from "../styles";
+import { IRadioGroupProps as IProps } from "../types";
+
+export default ({
     changeLocation,
     changeDifficulty,
     location,
-    difficulty
-}) => {
+    difficulty,
+}: IProps) => {
     return (
         <Card style={radio.card}>
             <Card.Content style={radio.containerStyle}>
@@ -18,7 +20,7 @@ export default RadioGroup = ({
                     <Title>Location</Title>
                     <Radio
                         labels={["Ruins", "Warrens", "Weald", "Cove"]}
-                        onPress={changeLocation}
+                        onPress={(location) => changeLocation(location)}
                         value={location}
                     />
                 </View>
@@ -26,7 +28,7 @@ export default RadioGroup = ({
                     <Title>Difficulty</Title>
                     <Radio
                         labels={["Short", "Medium", "Long"]}
-                        onPress={changeDifficulty}
+                        onPress={(difficulty) => changeDifficulty(difficulty)}
                         value={difficulty}
                     />
                 </View>

@@ -3,17 +3,13 @@ import { View } from "react-native";
 import { Paragraph, Subheading } from "react-native-paper";
 
 import ItemCard from "./ItemCard";
+
 import { card } from "../styles";
+import { ITipsProps as IProps, IDataInstance } from "../types";
+
 import data from "../data/tips.json";
 
-interface IDataInstance {
-    location: "ruins" | "weald" | "cove" | "warrens";
-    Effective: string[][];
-    Ineffective?: string[][];
-    Dangers: string[][];
-}
-
-export default ({ location }: { location: string }) => {
+export default ({ location }: IProps) => {
     const current = (data as IDataInstance[]).filter(
         (i) => i.location === location
     )[0];

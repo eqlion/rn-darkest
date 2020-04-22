@@ -2,15 +2,9 @@ import * as React from "react";
 import { Card } from "react-native-paper";
 
 import { cardCover, card } from "../styles";
+import { IItemCardProps as IProps } from "../types";
 
-interface Props {
-    name: string;
-    description: JSX.Element[] | JSX.Element;
-    theme?: boolean;
-    image?: number;
-}
-
-export default ({ name, description, theme, image }: Props) => (
+export default ({ name, description, theme, image }: IProps) => (
     <Card style={card.card}>
         <Card.Title title={name} />
         {image && (

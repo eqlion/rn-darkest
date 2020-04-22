@@ -1,17 +1,9 @@
 import { connect } from "react-redux";
-import { changeLocation, changeDifficulty } from "../actions";
-import { RootState } from "../reducers";
 import RadioGroup from "../components/RadioGroup";
 
-interface StateProps {
-    location: string;
-    difficulty: string;
-}
+import { changeLocation, changeDifficulty } from "../actions";
 
-interface DispatchProps {
-    changeLocation: (location: string) => void;
-    changeDifficulty: (difficulty: string) => void;
-}
+import { RootState, IRadioGroupState, IRadioGroupDispatch } from "../types";
 
 const mapStateToProps = (state: RootState) => ({
     location: state.location,
@@ -22,7 +14,7 @@ const mapDispatchToProps = {
     changeLocation,
     changeDifficulty,
 };
-export default connect<StateProps, DispatchProps, {}, RootState>(
+export default connect<IRadioGroupState, IRadioGroupDispatch, {}, RootState>(
     mapStateToProps,
     mapDispatchToProps
 )(RadioGroup);

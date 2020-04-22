@@ -3,21 +3,19 @@ import { View } from "react-native";
 import { RadioButton, Text } from "react-native-paper";
 
 import { radio } from "../styles";
+import { IRadioProps as IProps } from "../types";
 
-interface Props {
-    labels: string[];
-    value: string;
-    onPress: () => void;
-}
-
-export default ({ labels, value, onPress }: Props) => (
+export default ({ labels, value, onPress }: IProps) => (
     <View
         style={{
             flexDirection: "column",
             alignItems: "flex-start",
         }}
     >
-        <RadioButton.Group onValueChange={onPress} value={value}>
+        <RadioButton.Group
+            onValueChange={(value) => onPress(value)}
+            value={value}
+        >
             {labels.map((label) => (
                 <View key={label} style={radio.containerStyle}>
                     <RadioButton value={label.toLowerCase()} />

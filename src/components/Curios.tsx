@@ -1,36 +1,14 @@
 import React, { useState } from "react";
 import { View } from "react-native";
-import {
-    Title,
-    Subheading,
-    Paragraph,
-    Caption,
-    List,
-    Searchbar,
-} from "react-native-paper";
+import { Subheading, Paragraph, Searchbar } from "react-native-paper";
 
 import ItemCard from "./ItemCard";
-import { card } from "../styles";
-import { capitalize } from "../utils";
-import { icon } from "../../assets/images";
-interface ICuriosParams {
-    location: string;
-    theme: boolean;
-}
-interface ICurio {
-    name: string;
-    location: string[];
-    use: { item: string; result: string | string[] }[];
-}
 
-interface IItemCard extends JSX.Element {
-    name: string;
-    location: string[];
-    description: JSX.Element[];
-    theme: boolean;
-    image: boolean;
-    key: string;
-}
+import { card } from "../styles";
+import { ICuriosProps as IProps, ICurio } from "../types";
+
+import { icon } from "../../assets/images";
+
 const format = (name: string) => {
     switch (name) {
         case "nothing":
@@ -52,7 +30,7 @@ const format = (name: string) => {
     }
 };
 
-export default ({ location, theme }: ICuriosParams) => {
+export default ({ location, theme }: IProps) => {
     const [query, setQuery] = useState<string>("");
 
     const data = require("../data/curios.json");
@@ -74,7 +52,6 @@ export default ({ location, theme }: ICuriosParams) => {
         }
         const cards = [];
         for (let curio of curios) {
-            const curioLocation = curio.location;
             const name = curio["name"];
             const use = curio["use"];
             const description = [];
@@ -112,7 +89,6 @@ export default ({ location, theme }: ICuriosParams) => {
                     description={description}
                     theme={theme}
                     image={icon(name)}
-                    location={curioLocation}
                 />
             );
         }

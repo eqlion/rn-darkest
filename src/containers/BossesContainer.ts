@@ -1,19 +1,14 @@
 import { connect } from "react-redux";
 
-import { RootState } from "../reducers";
-
 import Bosses from "../components/Bosses";
 
-interface StateProps {
-    location: string;
-    theme: boolean;
-}
+import { RootState, IBossesProps } from "../types";
 
 const mapStateToProps = (state: RootState) => ({
     location: state.location,
     theme: state.theme,
 });
 
-export default connect<StateProps, null, {}, RootState>(mapStateToProps)(
+export default connect<IBossesProps, null, {}, RootState>(mapStateToProps)(
     Bosses
 );

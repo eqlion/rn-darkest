@@ -1,14 +1,9 @@
 import * as React from "react";
 import { Appbar } from "react-native-paper";
 
-// type Props = { changeTheme: () => void; theme: boolean };
+import { IHeaderProps as IProps } from "../types";
 
-interface Props {
-    theme: boolean;
-    changeTheme: () => void;
-}
-
-export default ({ changeTheme, theme }: Props) => {
+export default ({ changeTheme, theme }: IProps) => {
     return (
         <Appbar.Header>
             <Appbar.Action
