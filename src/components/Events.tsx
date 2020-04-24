@@ -32,7 +32,7 @@ export default () => {
                 placeholder="Search events"
                 onChangeText={(text) => setQuery(text)}
                 value={query}
-                style={{ marginHorizontal: 4, marginBottom: 4 }}
+                style={card.searchbar}
             />
             <ItemCard
                 name="Positive next quest"

@@ -15,7 +15,7 @@ export default ({
 }: IProps) => {
     return (
         <Card style={radio.card}>
-            <Card.Content style={radio.containerStyle}>
+            <Card.Content style={radio.buttonLabel}>
                 <View style={radio.radioButtons}>
                     <Title>Location</Title>
                     <Radio

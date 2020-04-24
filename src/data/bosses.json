@@ -105,11 +105,19 @@
         "strategy": [
             [
                 "Hellion",
-                "Can reach the Necromancer in the backline, might bring 2, once the first one is in the pot, you can continue the fight"
+                "Can reach the Hag in the backline, might bring 2, once the first one is in the pot, you can continue the fight"
             ],
             ["Shieldbracker", "Can reach in any ranks"],
             ["Arbalest", "Use marks, damage backline"],
-            ["Man At Arms", "Soak DMG from summons, Guard allies"]
+            ["Man At Arms", "Soak DMG from summons, Guard allies"],
+            [
+                "Abomination",
+                "Can reach back line, is not dramatically affected by shuffles"
+            ],
+            [
+                "Occultist",
+                "Produces high heal, is not dramatically affected by shuffles"
+            ]
         ],
         "trophy": {
             "name": "Hag's Ladle",

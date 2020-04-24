@@ -17,6 +17,7 @@ export default ({ location }: IProps) => {
     const effective = current.Effective;
     const ineffective = current.Ineffective;
     const dangers = current.Dangers;
+    const enemies = current.enemies;
 
     const parseEfficiency = (e: string[][]) => {
         const tips = [];
@@ -35,6 +36,10 @@ export default ({ location }: IProps) => {
     return (
         <View>
             <View>
+                <ItemCard
+                    name="Enemy types"
+                    description={<Paragraph>{enemies.join(", ")}</Paragraph>}
+                />
                 <ItemCard
                     name="Effective"
                     description={parseEfficiency(effective)}

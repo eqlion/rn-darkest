@@ -6,20 +6,15 @@ import { radio } from "../styles";
 import { IRadioProps as IProps } from "../types";
 
 export default ({ labels, value, onPress }: IProps) => (
-    <View
-        style={{
-            flexDirection: "column",
-            alignItems: "flex-start",
-        }}
-    >
+    <View style={radio.container}>
         <RadioButton.Group
             onValueChange={(value) => onPress(value)}
             value={value}
         >
             {labels.map((label) => (
-                <View key={label} style={radio.containerStyle}>
+                <View key={label} style={radio.buttonLabel}>
                     <RadioButton value={label.toLowerCase()} />
-                    <Text style={{ alignSelf: "center" }}>{label}</Text>
+                    <Text style={radio.label}>{label}</Text>
                 </View>
             ))}
         </RadioButton.Group>

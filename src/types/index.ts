@@ -10,6 +10,8 @@ export interface IAccordionProps {
     difficulty: difficulty;
 }
 
+export type IMainProps = IAccordionProps;
+
 export interface IDropdownSection {
     title: string;
     content: JSX.Element;
@@ -93,6 +95,24 @@ export interface IProvisionProps {
     difficulty: difficulty;
 }
 
+interface IProvisionDifficulty {
+    logs?: number;
+    food: number;
+    shovel: number;
+    bondage: number;
+    herb: number;
+    key: number;
+    water?: number;
+    antivenom?: 1;
+    torch: number;
+}
+
+export interface IProvisionItem {
+    location: location;
+    provision: IProvisionDifficulty[];
+}
+export type ProvisionKeys = keyof IProvisionDifficulty;
+
 export interface IRadioProps {
     labels: string[];
     value: string;
@@ -119,6 +139,7 @@ export interface IDataInstance {
     Effective: string[][];
     Ineffective?: string[][];
     Dangers: string[][];
+    enemies: string[];
 }
 
 export interface ITrinket {

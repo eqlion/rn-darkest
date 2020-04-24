@@ -1,6 +1,7 @@
 [
     {
         "location": "ruins",
+        "enemies": ["Human", "Unholy"],
         "Effective": [
             ["Blight", "Low resistance"],
             ["Crusader", "Extra damage against Unholy"],
@@ -9,6 +10,7 @@
         "Ineffective": [["Bleeds", "High resistance"]],
         "Dangers": [
             ["Bone spearman", "At low ranks"],
+            ["Bone Bearer", "Inspires enemies, high priority target"],
             [
                 "Many stress dealers",
                 "Bone Courtier, Cultist Acolyte and Madman"
@@ -18,6 +20,7 @@
     },
     {
         "location": "warrens",
+        "enemies": ["Human", "Beast"],
         "Effective": [
             ["Bleeds", "Low resistance"],
             ["Houndmaster", "Extra damage against Beast"],
@@ -26,11 +29,13 @@
         "Ineffective": [["Blight", "High resistance"]],
         "Dangers": [
             ["Swinetaur", "Especially in the back rows"],
-            ["Swine chopper", "Inflicts high bleeding, hard to kill"]
+            ["Swine chopper", "Inflicts high bleeding, hard to kill"],
+            ["Stress", "High stress damage"]
         ]
     },
     {
         "location": "weald",
+        "enemies": ["Eldritch", "Human"],
         "Effective": [
             ["Bandages", "Curios and enemies inflict bleeding"],
             ["Antivenom", "Curios and enemies inflict blight"],
@@ -39,12 +44,13 @@
         ],
         "Dangers": [
             ["Crone", "In front rows"],
-            ["Ectoplasm", "Can summon other enemies"],
+            ["Ectoplasm", "Can summon other ectoplasm"],
             ["Rabid Gnasher", "Fast and inflicts bleeds and diseases"]
         ]
     },
     {
         "location": "cove",
+        "enemies": ["Eldritch", "Unholy"],
         "Effective": [
             ["Medicinal herbs", "Curio, traps, debuff interactions"],
             ["Shovels", "Curio interactions"],

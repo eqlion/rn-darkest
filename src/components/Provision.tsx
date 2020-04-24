@@ -3,12 +3,18 @@ import { View } from "react-native";
 import { Card, DataTable } from "react-native-paper";
 
 import { card } from "../styles";
-import { IProvisionProps as IProps } from "../types";
+import {
+    IProvisionProps as IProps,
+    IProvisionItem,
+    ProvisionKeys,
+} from "../types";
 
 import { capitalize } from "../utils";
 
+import data from "../data/provision.json";
+
 export default ({ location, difficulty }: IProps) => {
-    const formatItemName = (item: string, number: number) => {
+    const formatItemName = (item: string, number: number | undefined) => {
         switch (item) {
             case "food":
                 return "Food";
@@ -29,14 +35,20 @@ export default ({ location, difficulty }: IProps) => {
         }
     };
 
-    const data = require("../data/provision.json");
-    const entry = data[location][difficulty];
-    const table = Object.keys(entry).map((key) => (
-        <DataTable.Row key={key}>
-            <DataTable.Cell>{formatItemName(key, entry[key])}</DataTable.Cell>
-            <DataTable.Cell numeric>{entry[key]}</DataTable.Cell>
-        </DataTable.Row>
-    ));
+    const d = (data as IProvisionItem[]).filter(
+        (l) => l.location === location
+    )[0].provision;
+    const entry =
+        difficulty === "short" ? d[0] : difficulty === "medium" ? d[1] : d[2];
+    const table = Object.keys(entry).map((key) => {
+        const num = entry[key as ProvisionKeys];
+        return (
+            <DataTable.Row key={key}>
+                <DataTable.Cell>{formatItemName(key, num)}</DataTable.Cell>
+                <DataTable.Cell numeric>{num}</DataTable.Cell>
+            </DataTable.Row>
+        );
+    });
 
     return (
         <View>

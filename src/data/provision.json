@@ -1,130 +1,142 @@
-{
-    "ruins": {
-        "short": {
-            "food": 12,
-            "shovel": 2,
-            "bondage": 1,
-            "herb": 1,
-            "key": 1,
-            "water": 2,
-            "torch": 8
-        },
-        "medium": {
-            "logs": 1,
-            "food": 18,
-            "shovel": 3,
-            "bondage": 2,
-            "herb": 2,
-            "key": 2,
-            "water": 3,
-            "torch": 13
-        },
-        "long": {
-            "logs": 2,
-            "food": 20,
-            "shovel": 4,
-            "bondage": 3,
-            "herb": 3,
-            "key": 3,
-            "water": 4,
-            "torch": 16
-        }
+[
+    {
+        "location": "ruins",
+        "provision": [
+            {
+                "food": 12,
+                "shovel": 2,
+                "bondage": 1,
+                "herb": 1,
+                "key": 1,
+                "water": 2,
+                "torch": 8
+            },
+            {
+                "logs": 1,
+                "food": 18,
+                "shovel": 3,
+                "bondage": 2,
+                "herb": 2,
+                "key": 2,
+                "water": 3,
+                "torch": 13
+            },
+            {
+                "logs": 2,
+                "food": 20,
+                "shovel": 4,
+                "bondage": 3,
+                "herb": 3,
+                "key": 3,
+                "water": 4,
+                "torch": 16
+            }
+        ]
     },
-    "warrens": {
-        "short": {
-            "food": 12,
-            "shovel": 2,
-            "bondage": 1,
-            "herb": 3,
-            "key": 2,
-            "water": 2,
-            "torch": 10
-        },
-        "medium": {
-            "logs": 1,
-            "food": 18,
-            "shovel": 3,
-            "bondage": 2,
-            "antivenom": 1,
-            "herb": 4,
-            "key": 3,
-            "water": 3,
-            "torch": 16
-        },
-        "long": {
-            "logs": 2,
-            "food": 20,
-            "shovel": 4,
-            "bondage": 3,
-            "antivenom": 1,
-            "herb": 5,
-            "key": 3,
-            "water": 4,
-            "torch": 20
-        }
+    {
+        "location": "warrens",
+        "provision": [
+            {
+                "food": 12,
+                "shovel": 2,
+                "bondage": 1,
+                "herb": 3,
+                "key": 2,
+                "water": 2,
+                "torch": 10
+            },
+            {
+                "logs": 1,
+                "food": 18,
+                "shovel": 3,
+                "bondage": 2,
+                "antivenom": 1,
+                "herb": 4,
+                "key": 3,
+                "water": 3,
+                "torch": 16
+            },
+            {
+                "logs": 2,
+                "food": 20,
+                "shovel": 4,
+                "bondage": 3,
+                "antivenom": 1,
+                "herb": 5,
+                "key": 3,
+                "water": 4,
+                "torch": 20
+            }
+        ]
     },
-    "weald": {
-        "short": {
-            "food": 12,
-            "shovel": 3,
-            "bondage": 2,
-            "herb": 1,
-            "antivenom": 2,
-            "key": 1,
-            "water": 1,
-            "torch": 8
-        },
-        "medium": {
-            "logs": 1,
-            "food": 18,
-            "shovel": 5,
-            "bondage": 3,
-            "antivenom": 3,
-            "herb": 2,
-            "key": 2,
-            "water": 2,
-            "torch": 13
-        },
-        "long": {
-            "logs": 2,
-            "food": 20,
-            "shovel": 6,
-            "bondage": 4,
-            "antivenom": 4,
-            "herb": 2,
-            "key": 2,
-            "water": 3,
-            "torch": 16
-        }
+    {
+        "location": "weald",
+        "provision": [
+            {
+                "food": 12,
+                "shovel": 3,
+                "bondage": 2,
+                "herb": 1,
+                "antivenom": 2,
+                "key": 1,
+                "water": 1,
+                "torch": 8
+            },
+            {
+                "logs": 1,
+                "food": 18,
+                "shovel": 5,
+                "bondage": 3,
+                "antivenom": 3,
+                "herb": 2,
+                "key": 2,
+                "water": 2,
+                "torch": 13
+            },
+            {
+                "logs": 2,
+                "food": 20,
+                "shovel": 6,
+                "bondage": 4,
+                "antivenom": 4,
+                "herb": 2,
+                "key": 2,
+                "water": 3,
+                "torch": 16
+            }
+        ]
     },
-    "cove": {
-        "short": {
-            "food": 12,
-            "shovel": 3,
-            "bondage": 2,
-            "herb": 2,
-            "key": 1,
-            "torch": 8
-        },
-        "medium": {
-            "logs": 1,
-            "food": 18,
-            "shovel": 5,
-            "bondage": 4,
-            "herb": 3,
-            "key": 2,
-            "water": 1,
-            "torch": 13
-        },
-        "long": {
-            "logs": 2,
-            "food": 20,
-            "shovel": 6,
-            "bondage": 6,
-            "herb": 4,
-            "key": 3,
-            "water": 1,
-            "torch": 16
-        }
+    {
+        "location": "cove",
+        "provision": [
+            {
+                "food": 12,
+                "shovel": 3,
+                "bondage": 2,
+                "herb": 2,
+                "key": 1,
+                "torch": 8
+            },
+            {
+                "logs": 1,
+                "food": 18,
+                "shovel": 5,
+                "bondage": 4,
+                "herb": 3,
+                "key": 2,
+                "water": 1,
+                "torch": 13
+            },
+            {
+                "logs": 2,
+                "food": 20,
+                "shovel": 6,
+                "bondage": 6,
+                "herb": 4,
+                "key": 3,
+                "water": 1,
+                "torch": 16
+            }
+        ]
     }
-}
+]

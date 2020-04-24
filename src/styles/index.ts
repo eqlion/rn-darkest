@@ -39,14 +39,23 @@ export const card = StyleSheet.create({
     card: {
         margin: 4,
     },
+    searchbar: { marginHorizontal: 4, marginBottom: 4 },
 });
 
-// export const searchbar = StyleSheet.create({
-//     marginBottom: 4,
-//     marginHorizontal: 4,
-// });
-
-// ItemCard
+export const accordion = StyleSheet.create({
+    container: {
+        marginVertical: 8,
+        marginHorizontal: 20,
+        alignItems: "center",
+        justifyContent: "space-between",
+        flexDirection: "row",
+    },
+    iconTitleContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    title: { marginHorizontal: 16 },
+});
 
 export const cardCover = StyleSheet.create({
     common: {
@@ -65,18 +74,23 @@ export const cardCover = StyleSheet.create({
 // RadioGroup. Radio
 
 export const radio = StyleSheet.create({
-    containerStyle: {
+    buttonLabel: {
         padding: 5,
         justifyContent: "space-around",
         flexDirection: "row",
         alignItems: "flex-start",
-        position: "relative",
     },
+
     radioButtons: {
         alignItems: "center",
         flexDirection: "column",
     },
     card: {
         margin: 4,
+    },
+    label: { alignSelf: "center" },
+    container: {
+        flexDirection: "column",
+        alignItems: "flex-start",
     },
 });

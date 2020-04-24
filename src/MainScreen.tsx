@@ -2,20 +2,12 @@ import React from "react";
 import { connect } from "react-redux";
 import { ScrollView } from "react-native-gesture-handler";
 import { Provider } from "react-native-paper";
-import { RootState } from "./reducers";
+import { RootState, IMainProps as IProps } from "./types";
 
 import Header from "./containers/HeaderContainer";
-import Provision from "./containers/ProvisionContainer";
 import RadioGroup from "./containers/RadioGroupContainer";
 import Accordion from "./components/Accordion";
 import { lightTheme, darkTheme } from "./styles";
-import difficulty from "./reducers/difficulty";
-
-interface IProps {
-    theme: boolean;
-    location: string;
-    difficulty: string;
-}
 
 const MainScreen = ({ theme, location, difficulty }: IProps) => {
     return (
@@ -27,7 +19,6 @@ const MainScreen = ({ theme, location, difficulty }: IProps) => {
                 }}
             >
                 <RadioGroup />
-                {/* <Provision /> */}
                 <Accordion
                     location={location}
                     theme={theme}
@@ -44,6 +35,6 @@ const mapStateToProps = (state: RootState) => ({
     difficulty: state.difficulty,
 });
 
-export default connect<IProps, null, {}, RootState>(mapStateToProps)(
+export default connect<IProps, null, null, RootState>(mapStateToProps)(
     MainScreen
 );

@@ -46,20 +46,20 @@ export default ({ location, theme }: IProps) => {
         }
     }
 
-    const renderCards = (curios: ICurio[]): JSX.Element[] => {
+    const renderCards = (curios: ICurio[]): JSX.Element[] | JSX.Element => {
         if (!curios.length) {
-            return [<Paragraph style={card.text}>Nothing found!</Paragraph>];
+            return <Paragraph style={card.text}>Nothing found!</Paragraph>;
         }
         const cards = [];
         for (let curio of curios) {
-            const name = curio["name"];
-            const use = curio["use"];
+            const name = curio.name;
+            const use = curio.use;
             const description = [];
             for (let item_ of use) {
-                const item = item_["item"];
+                const item = item_.item;
                 const results = [];
-                if (typeof item_["result"] === "object") {
-                    for (let result of item_["result"]) {
+                if (typeof item_.result === "object") {
+                    for (let result of item_.result) {
                         results.push(
                             <Paragraph key={result} style={card.result}>
                                 {result}
@@ -95,14 +95,14 @@ export default ({ location, theme }: IProps) => {
         return cards;
     };
     return (
-        <View>
+        <>
             <Searchbar
                 placeholder="Search curio"
                 onChangeText={(query) => setQuery(query)}
                 value={query}
-                style={{ marginHorizontal: 4, marginBottom: 4 }}
+                style={card.searchbar}
             />
             {renderCards(curios)}
-        </View>
+        </>
     );
 };

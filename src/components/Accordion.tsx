@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Accordion from "react-native-collapsible/Accordion";
 import { View, TouchableOpacity } from "react-native";
-import { Title, Caption } from "react-native-paper";
+import { Title, Caption, Paragraph } from "react-native-paper";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 import Curios from "../containers/CuriosContainer";
@@ -13,14 +13,12 @@ import Trinkets from "../components/Triknets";
 
 import { capitalize } from "../utils";
 
-import { card } from "../styles";
+import { accordion } from "../styles";
 
 import {
     IAccordionProps as IProps,
     IDropdownSection as ISection,
 } from "../types";
-
-// const icons = ["briefcase", "lightbulb", "shape", "sword", "bell", "shield"];
 
 enum icons {
     "briefcase",
@@ -32,6 +30,7 @@ enum icons {
 }
 
 export default ({ theme, location, difficulty }: IProps) => {
+    const color = theme ? "black" : "white";
     const SECTIONS = [
         {
             title: "Provision",
@@ -60,12 +59,12 @@ export default ({ theme, location, difficulty }: IProps) => {
         {
             title: "Town events",
             content: <Events />,
-            caption: undefined,
+            caption: <Paragraph> </Paragraph>,
         },
         {
             title: "Kickstarter Trinkets",
             content: <Trinkets />,
-            caption: undefined,
+            caption: <Paragraph> </Paragraph>,
         },
     ];
     const [activeSections, setActiveSections] = useState<number[]>([]);
@@ -76,28 +75,10 @@ export default ({ theme, location, difficulty }: IProps) => {
         isActive: boolean
     ) => {
         return (
-            <View
-                style={{
-                    ...card.text,
-                    flex: 1,
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    flexDirection: "row",
-                }}
-            >
-                <View
-                    style={{
-                        flex: 1,
-                        flexDirection: "row",
-                        alignItems: "center",
-                    }}
-                >
-                    <Icon
-                        name={icons[index]}
-                        size={25}
-                        color={theme ? "black" : "white"}
-                    />
-                    <View style={{ marginHorizontal: 16 }}>
+            <View style={accordion.container}>
+                <View style={accordion.iconTitleContainer}>
+                    <Icon name={icons[index]} size={25} color={color} />
+                    <View style={accordion.title}>
                         <Title>{section.title}</Title>
                         {section.caption}
                     </View>
@@ -105,7 +86,7 @@ export default ({ theme, location, difficulty }: IProps) => {
                 <Icon
                     name={isActive ? "chevron-up" : "chevron-down"}
                     size={25}
-                    color={theme ? "black" : "white"}
+                    color={color}
                 />
             </View>
         );
