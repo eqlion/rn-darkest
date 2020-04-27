@@ -35,6 +35,6 @@ const mapStateToProps = (state: RootState) => ({
     difficulty: state.difficulty,
 });
 
-export default connect<IProps, null, null, RootState>(mapStateToProps)(
+export default connect<IProps, null, {}, RootState>(mapStateToProps)(
     MainScreen
 );
