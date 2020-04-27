@@ -6,11 +6,11 @@ This is a companion app for the Darkest Dungeon game. It contains data on enemie
 
 -   TypeScript 3.8.3
 -   React Native 61
-       -   [react-native-paper](https://github.com/callstack/react-native-paper) for material design compliant UI elements
+    -   [react-native-paper](https://github.com/callstack/react-native-paper) for material design compliant UI elements
     -   [react-native-collapsible](https://github.com/oblador/react-native-collapsible) for these sweet accordions
 -   Redux for state management
-       -   [react-redux](https://github.com/reduxjs/react-redux) for connecting redux store to RN components
-       -   [redux-persist](https://github.com/rt2zz/redux-persist) for saving state locally
+    -   [react-redux](https://github.com/reduxjs/react-redux) for connecting redux store to RN components
+    -   [redux-persist](https://github.com/rt2zz/redux-persist) for saving state locally
 
 ## How to run it?
 
