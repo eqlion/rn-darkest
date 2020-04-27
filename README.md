@@ -1,32 +1,17 @@
-# Why?
+# What is it?
 
-At the time of creating this app, I could not find a convenient Android app that could supply me with information about Darkest Dungeon (what provision to buy, how to interact with certain curios). Those that exist are ether buggy and slow, or contain a lot of annoying ads, or do not use Google's Material Design guideline. To solve this issue while learning JS and React on practice I decided to create this app.
+This is a companion app for the Darkest Dungeon game. It contains data on enemies, bosses, recommended parties, provision, and curio interaction tips. At the time of creating of this app, the competition is either plagued with ads, or hard to navigate and use. The app is ad free and solves navigation issues (and packs a night theme too!).
 
-# Stack
+# What is used to build it?
 
--   React Native
-    -   [react-native-paper](https://github.com/callstack/react-native-paper) for all the major ui elements
-    -   [react-native-material-ui](https://github.com/xotahal/react-native-material-ui) for the animated header
--   Redux
-    -   [react-redux](https://github.com/reduxjs/react-redux) for connecting the components to the store
-    -   [redux-persist](https://github.com/rt2zz/redux-persist) to save and load theme preference locally
+-   TypeScript 3.8.3
+-   React Native 61
+       -   [react-native-paper](https://github.com/callstack/react-native-paper) for material design compliant UI elements
+    -   [react-native-collapsible](https://github.com/oblador/react-native-collapsible) for these sweet accordions
+-   Redux for state management
+       -   [react-redux](https://github.com/reduxjs/react-redux) for connecting redux store to RN components
+       -   [redux-persist](https://github.com/rt2zz/redux-persist) for saving state locally
 
-# TODO
+## How to run it?
 
-1. [x] Actually integrate Redux
-
-2. [x] Restructure curio interaction outcomes in order to increase clarity
-
-4) [x] Reorganize loading images
-
-5) [x] Resize images properly
-
-6) [x] Add tips on what would be effective during the expedition
-
-7) [x] Add dark theme
-
-8) [x] Save theme preference locally
-
-9) [x] Add icon and loading screen (splash screen) image
-
-10) [ ] (Optional) Refactor the code and file structure
+You can either install the apk from [here](https://github.com/eqlion/rn-darkest/releases) (don't forget to enable installation from unknown sources), or clone the repo, run `yarn install` to install the dependencies (I assume that you already have expo installed and configured) and run `yarn start` to start the local server.
