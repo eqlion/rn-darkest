@@ -107,7 +107,7 @@ export default ({ theme, location, difficulty }: IProps) => {
             renderContent={_renderContent}
             onChange={_updateSections}
             touchableComponent={TouchableOpacity}
-            expandMultiple={true}
+            expandMultiple
         />
     );
 };
